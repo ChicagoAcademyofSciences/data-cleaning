@@ -1,0 +1,1017 @@
+﻿[
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ﻿\"MEDIA_URI to ﻿MEDIA_URI",
+    "oldColumnName": "﻿\"MEDIA_URI",
+    "newColumnName": "﻿MEDIA_URI"
+  },
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "﻿MEDIA_URI",
+      "PREVIEW_URI",
+      "MEDIA_LICENSE",
+      "MIME_TYPE",
+      "MEDIA_TYPE",
+      "MEDIA_RELATIONSHIP_1",
+      "MEDIA_RELATED_TERM_1",
+      "MEDIA_RELATIONSHIP_2",
+      "MEDIA_RELATED_TERM_2",
+      "MEDIA_RELATIONSHIP_3",
+      "MEDIA_RELATED_TERM_3",
+      "MEDIA_LABEL_1",
+      "MEDIA_LABEL_VALUE_1",
+      "MEDIA_LABEL_2",
+      "MEDIA_LABEL_VALUE_2",
+      "MEDIA_LABEL_3",
+      "MEDIA_LABEL_VALUE_3"
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LICENSE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "MEDIA_LICENSE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "CC BY-NC-SA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_RELATIONSHIP_1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "MEDIA_RELATIONSHIP_1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "shows cataloged_item"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column MEDIA_RELATED_TERM_1 using expression grel:cells[\"PREVIEW_URI\"].value.replace(\"http://web.corral.tacc.utexas.edu/CAS/20161211-01/tb/tn_chas_mamm_\",\"CHAS:Mamm:\")",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "MEDIA_RELATED_TERM_1",
+    "expression": "grel:cells[\"PREVIEW_URI\"].value.replace(\"http://web.corral.tacc.utexas.edu/CAS/20161211-01/tb/tn_chas_mamm_\",\"CHAS:Mamm:\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column MEDIA_RELATED_TERM_1 using expression grel:substring(value,0,-6)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "MEDIA_RELATED_TERM_1",
+    "expression": "grel:substring(value,0,-6)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_RELATIONSHIP_2",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "MEDIA_RELATIONSHIP_2",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "derived from media"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column MEDIA_RELATED_TERM_2 using expression grel:cells[\"PREVIEW_URI\"].value.replace(\"tb/tn_\",\"\")",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "MEDIA_RELATED_TERM_2",
+    "expression": "grel:cells[\"PREVIEW_URI\"].value.replace(\"tb/tn_\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column MEDIA_RELATED_TERM_2 using expression grel:value.replace(\".jpg\",\".dng\")",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "MEDIA_RELATED_TERM_2",
+    "expression": "grel:value.replace(\".jpg\",\".dng\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_RELATIONSHIP_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "MEDIA_RELATIONSHIP_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "associated with project"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_RELATED_TERM_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "MEDIA_RELATED_TERM_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "chas-specimen-photography"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_1",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "MEDIA_LABEL_1",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "made date"
+      }
+    ]
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column date at index 9 based on column MEDIA_RELATED_TERM_2 using expression grel:cell.cross('MediaMadeDate', 'key').cells['date'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "date",
+    "columnInsertIndex": 9,
+    "baseColumnName": "MEDIA_RELATED_TERM_2",
+    "expression": "grel:cell.cross('MediaMadeDate', 'key').cells['date'].value[0]",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column MEDIA_LABEL_VALUE_1 using expression grel:cells[\"date\"].value",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "MEDIA_LABEL_VALUE_1",
+    "expression": "grel:cells[\"date\"].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column date",
+    "columnName": "date"
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_2",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "MEDIA_LABEL_2",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "subject"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_VALUE_2",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "MEDIA_LABEL_VALUE_2",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "mammal"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "MEDIA_LABEL_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "description"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_VALUE_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "-1",
+          "name": "﻿MEDIA_URI",
+          "type": "text",
+          "columnName": "﻿MEDIA_URI"
+        }
+      ]
+    },
+    "columnName": "MEDIA_LABEL_VALUE_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "View of specimen, entire."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_VALUE_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "-5",
+          "name": "﻿MEDIA_URI",
+          "type": "text",
+          "columnName": "﻿MEDIA_URI"
+        }
+      ]
+    },
+    "columnName": "MEDIA_LABEL_VALUE_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "View of cranium, dorsal."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_VALUE_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "-6",
+          "name": "﻿MEDIA_URI",
+          "type": "text",
+          "columnName": "﻿MEDIA_URI"
+        }
+      ]
+    },
+    "columnName": "MEDIA_LABEL_VALUE_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "View of cranium, ventral."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_VALUE_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "-7",
+          "name": "﻿MEDIA_URI",
+          "type": "text",
+          "columnName": "﻿MEDIA_URI"
+        }
+      ]
+    },
+    "columnName": "MEDIA_LABEL_VALUE_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "View of mandible."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_VALUE_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "-8",
+          "name": "﻿MEDIA_URI",
+          "type": "text",
+          "columnName": "﻿MEDIA_URI"
+        }
+      ]
+    },
+    "columnName": "MEDIA_LABEL_VALUE_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "View of cranium, lateral."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_VALUE_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "-2",
+          "name": "﻿MEDIA_URI",
+          "type": "text",
+          "columnName": "﻿MEDIA_URI"
+        },
+        {
+          "omitError": false,
+          "expression": "grel:facetCount(value, \"value\", \"MEDIA_RELATED_TERM_1\") == 8",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "MEDIA_RELATED_TERM_1",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "MEDIA_RELATED_TERM_1"
+        }
+      ]
+    },
+    "columnName": "MEDIA_LABEL_VALUE_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "View of study skin, dorsal."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_VALUE_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "-3",
+          "name": "﻿MEDIA_URI",
+          "type": "text",
+          "columnName": "﻿MEDIA_URI"
+        },
+        {
+          "omitError": false,
+          "expression": "grel:facetCount(value, \"value\", \"MEDIA_RELATED_TERM_1\") == 8",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "MEDIA_RELATED_TERM_1",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "MEDIA_RELATED_TERM_1"
+        }
+      ]
+    },
+    "columnName": "MEDIA_LABEL_VALUE_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "(blank)"
+        ],
+        "to": "View of study skin, ventral."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_VALUE_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "-3",
+          "name": "﻿MEDIA_URI",
+          "type": "text",
+          "columnName": "﻿MEDIA_URI"
+        },
+        {
+          "omitError": false,
+          "expression": "grel:facetCount(value, \"value\", \"MEDIA_RELATED_TERM_1\") == 8",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "MEDIA_RELATED_TERM_1",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "MEDIA_RELATED_TERM_1"
+        }
+      ]
+    },
+    "columnName": "MEDIA_LABEL_VALUE_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "View of study skin, ventral."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_VALUE_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "-4",
+          "name": "﻿MEDIA_URI",
+          "type": "text",
+          "columnName": "﻿MEDIA_URI"
+        },
+        {
+          "omitError": false,
+          "expression": "grel:facetCount(value, \"value\", \"MEDIA_RELATED_TERM_1\") == 8",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "MEDIA_RELATED_TERM_1",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "MEDIA_RELATED_TERM_1"
+        }
+      ]
+    },
+    "columnName": "MEDIA_LABEL_VALUE_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "View of study skin, lateral."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_VALUE_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "-2",
+          "name": "﻿MEDIA_URI",
+          "type": "text",
+          "columnName": "﻿MEDIA_URI"
+        },
+        {
+          "omitError": false,
+          "expression": "grel:facetCount(value, \"value\", \"MEDIA_RELATED_TERM_1\") == 5",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "MEDIA_RELATED_TERM_1",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "MEDIA_RELATED_TERM_1"
+        }
+      ]
+    },
+    "columnName": "MEDIA_LABEL_VALUE_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "View of cranium, dorsal."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_VALUE_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "-3",
+          "name": "﻿MEDIA_URI",
+          "type": "text",
+          "columnName": "﻿MEDIA_URI"
+        },
+        {
+          "omitError": false,
+          "expression": "grel:facetCount(value, \"value\", \"MEDIA_RELATED_TERM_1\") == 5",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "MEDIA_RELATED_TERM_1",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "MEDIA_RELATED_TERM_1"
+        }
+      ]
+    },
+    "columnName": "MEDIA_LABEL_VALUE_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "View of cranium, ventral."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_VALUE_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "-4",
+          "name": "﻿MEDIA_URI",
+          "type": "text",
+          "columnName": "﻿MEDIA_URI"
+        },
+        {
+          "omitError": false,
+          "expression": "grel:facetCount(value, \"value\", \"MEDIA_RELATED_TERM_1\") == 5",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "MEDIA_RELATED_TERM_1",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "MEDIA_RELATED_TERM_1"
+        }
+      ]
+    },
+    "columnName": "MEDIA_LABEL_VALUE_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "View of mandible."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_VALUE_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "-5",
+          "name": "﻿MEDIA_URI",
+          "type": "text",
+          "columnName": "﻿MEDIA_URI"
+        },
+        {
+          "omitError": false,
+          "expression": "grel:facetCount(value, \"value\", \"MEDIA_RELATED_TERM_1\") == 5",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "MEDIA_RELATED_TERM_1",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "MEDIA_RELATED_TERM_1"
+        }
+      ]
+    },
+    "columnName": "MEDIA_LABEL_VALUE_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "View of cranium, dorsal."
+        ],
+        "to": "View of cranium, lateral."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_VALUE_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "grel:facetCount(value, \"value\", \"MEDIA_RELATED_TERM_1\") == 7",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "MEDIA_RELATED_TERM_1",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "MEDIA_RELATED_TERM_1"
+        },
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "-2",
+          "name": "﻿MEDIA_URI",
+          "type": "text",
+          "columnName": "﻿MEDIA_URI"
+        }
+      ]
+    },
+    "columnName": "MEDIA_LABEL_VALUE_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "View of study skin, dorsal."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_VALUE_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "grel:facetCount(value, \"value\", \"MEDIA_RELATED_TERM_1\") == 7",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "MEDIA_RELATED_TERM_1",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "MEDIA_RELATED_TERM_1"
+        },
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "-3",
+          "name": "﻿MEDIA_URI",
+          "type": "text",
+          "columnName": "﻿MEDIA_URI"
+        }
+      ]
+    },
+    "columnName": "MEDIA_LABEL_VALUE_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "(blank)"
+        ],
+        "to": "View of study skin, ventral."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_VALUE_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "grel:facetCount(value, \"value\", \"MEDIA_RELATED_TERM_1\") == 7",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "MEDIA_RELATED_TERM_1",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "MEDIA_RELATED_TERM_1"
+        },
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "-3",
+          "name": "﻿MEDIA_URI",
+          "type": "text",
+          "columnName": "﻿MEDIA_URI"
+        }
+      ]
+    },
+    "columnName": "MEDIA_LABEL_VALUE_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "View of study skin, ventral."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_VALUE_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "grel:facetCount(value, \"value\", \"MEDIA_RELATED_TERM_1\") == 7",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "MEDIA_RELATED_TERM_1",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "MEDIA_RELATED_TERM_1"
+        },
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "-4",
+          "name": "﻿MEDIA_URI",
+          "type": "text",
+          "columnName": "﻿MEDIA_URI"
+        }
+      ]
+    },
+    "columnName": "MEDIA_LABEL_VALUE_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "(blank)"
+        ],
+        "to": "View of study skin, lateral."
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MEDIA_LABEL_VALUE_3",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "grel:facetCount(value, \"value\", \"MEDIA_RELATED_TERM_1\") == 7",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "MEDIA_RELATED_TERM_1",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": "MEDIA_RELATED_TERM_1"
+        },
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "-4",
+          "name": "﻿MEDIA_URI",
+          "type": "text",
+          "columnName": "﻿MEDIA_URI"
+        }
+      ]
+    },
+    "columnName": "MEDIA_LABEL_VALUE_3",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "View of study skin, lateral."
+      }
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+﻿[
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ﻿MEDIA_URI to ﻿MEDIA_URI b",
+    "oldColumnName": "﻿MEDIA_URI",
+    "newColumnName": "﻿MEDIA_URI b"
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MIME_TYPE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "MIME_TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "image/jpeg"
+        ],
+        "to": "image/dng"
+      }
+    ]
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column MEDIA_RELATED_TERM_2 to MEDIA_URI",
+    "oldColumnName": "MEDIA_RELATED_TERM_2",
+    "newColumnName": "MEDIA_URI"
+  }
+]

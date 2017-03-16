@@ -1,0 +1,108 @@
+[
+  {
+    "op": "core/column-addition",
+    "description": "Create column CAT - Collection at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Collection'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "CAT - Collection",
+    "columnInsertIndex": 2,
+    "baseColumnName": "CAT_NUM",
+    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Collection'].value[0]",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Collection'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2",
+    "columnInsertIndex": 2,
+    "baseColumnName": "CAT_NUM",
+    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Collection'].value[0]",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Collection'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "3",
+    "columnInsertIndex": 2,
+    "baseColumnName": "CAT_NUM",
+    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Collection'].value[0]",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Collection'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "4",
+    "columnInsertIndex": 2,
+    "baseColumnName": "CAT_NUM",
+    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Collection'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column CAT - Collection using expression grel:cells[\"2\"].value",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CAT - Collection",
+    "expression": "grel:cells[\"2\"].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column CAT - Collection using expression grel:cells[\"3\"].value",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CAT - Collection",
+    "expression": "grel:cells[\"3\"].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column CAT - Collection using expression grel:cells[\"4\"].value",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CAT - Collection",
+    "expression": "grel:cells[\"4\"].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column 2",
+    "columnName": "2"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column 3",
+    "columnName": "3"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column 4",
+    "columnName": "4"
+  }
+]
