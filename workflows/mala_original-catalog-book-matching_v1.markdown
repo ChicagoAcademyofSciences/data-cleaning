@@ -15,7 +15,7 @@ You will be working in a spreadsheet that we have prepared called *Mala\_CATMatc
 
 1. Flagged duplicate catalog numbers with “[duplicate]” after the number in the column CAT_NUM.
 
-1. Retained a master copy of this ([Mala-CATMatch_2017-03-18.csv](../working-files/Mala-CATMatch_2017-03-18.csv)) in Open Refine.
+1. Retained a master copy of this ([Mala-CATMatch_2017-03-18.csv](../working-files/Mala_CATMatch_2017-03-18.csv)) in Open Refine.
 
 ### Intern Process, Part 1
 
