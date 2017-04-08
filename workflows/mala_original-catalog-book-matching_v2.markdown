@@ -1,4 +1,4 @@
-# NSF Transcription Intern
+# NSF Transcription Intern (malacology)
 ## Cross-Referencing Original Catalog Books with Malacology Inventory Data
 
 The goal of this project is to fill in our malacology inventory spreadsheet with as much data from our catalog books as possible. All but one of our catalog books is fully transcribed. Your task is to cross-reference the transcribed catalog book records with the information in our malacology inventory spreadsheet and add any missing information, or look into any discrepancies between these two sources.
