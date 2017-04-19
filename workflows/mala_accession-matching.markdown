@@ -1,7 +1,7 @@
 # Accession Matching (malacology)
 ## For cleaning and cross-referencing inventory data between Arctos, inventory data, and cleaned catalog data
 
-The goal of this project is to identify inventoried specimens with existing accession numbers. The inventory data used in this project has not yet been cleaned or cross-referenced with the catalog data. In order to efficiently and accurately identify the largest number of inventoried specimens, you will first have to clean various data fields.
+The goal of this project is to identify inventoried specimens associated with existing accession numbers. The inventory data used in this project has not yet been cleaned or cross-referenced with the catalog data. As such, there are many errors and holes in the data. In order to efficiently and accurately identify the largest number of inventoried specimens, you will first have to clean various data fields and cross reference the inventory data with information on Arctos and in the cleaned catalog data.
 
 ### Background Information
 
