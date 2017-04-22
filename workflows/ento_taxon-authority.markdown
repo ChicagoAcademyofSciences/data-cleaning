@@ -1,8 +1,12 @@
 # Taxon Authority (entomology)
 
+* * *
+
 ## Step 1, Consolidating original taxonomic data
 
 CHAS entomology specimens were inventoried in separate Excel spreadsheets by taxonomic group. In order to clean up and synonymize taxonomic names, we began by pulling all taxonomic identifications from non-Lepidopteran entomology spreadsheets into a single field, *SYNONYM (data directly from spreadsheet)*. We retained the data verbatim in this field as primary keys back to our data, then duplicated them into a new field, *TAXON (to match to authority)*. Names in the latter field were cleaned by trimming extra spaces, return carriages, and special characters. They were then clustered to minimize the amount of unique names we had to synonymize.
+
+* * *
 
 ## Step 2, Synonymizing with valid taxonomy
 
@@ -10,24 +14,24 @@ Taxonomic names represented in *TAXON (to match to authority)* needed to be veri
 
 ### Arachnids (n=356)
 
-Proposed workflow determined by @ekrimmel and Petra Sierwald (Associate Curator at the Field Museum) was to have CHAS validate names against [World Spider Catalog](http://www.wsc.nmbe.ch) and [ITIS](https://www.itis.gov), then use Sierwald's expertise to clarify any lingering questions.
+Proposed workflow determined by [@ekrimmel](https://github.com/ekrimmel) and Petra Sierwald (Associate Curator at the Field Museum) was to have CHAS validate names against [World Spider Catalog](http://www.wsc.nmbe.ch) and [ITIS](https://www.itis.gov), then use Sierwald's expertise to clarify any lingering questions.
 
-To validate names against World Spider Catalog, @ekrimmel generated links to the World Spider Catalog search result for each Aranae name with an identification at least to genus (n=320). Each name was then verified by @showes clicking on the link and either **(a)** confirming that our name was valid, or **(b)** copy-pasting the valid synonym into our data. Taxonomic concepts higher than genus (n=14) were verified by hand on World Spider Catalog. Non-Aranae names (n=22) were verified by hand on ITIS.
+To validate names against World Spider Catalog, [@ekrimmel](https://github.com/ekrimmel) generated links to the World Spider Catalog search result for each Aranae name with an identification at least to genus (n=320). Each name was then verified by [@showes](https://github.com/samuelhowes24) clicking on the link and either **(a)** confirming that our name was valid, or **(b)** copy-pasting the valid synonym into our data. Taxonomic concepts higher than genus (n=14) were verified by hand on World Spider Catalog. Non-Aranae names (n=22) were verified by hand on ITIS.
 
 We were able to validate and synonymize 92% of our Arachnida names via the methods above. The remaining 28 names were reviewed and resolved by Sierwald.
 
 ### Other non-insect arthropods (n=13)
 
-Proposed workflow determined by @ekrimmel and Sierwald was to have CHAS hand validate names against [ChiloBase](http://chilobase.biologia.unipd.it) and
+Proposed workflow determined by [@ekrimmel](https://github.com/ekrimmel) and Sierwald was to have CHAS hand validate names against [ChiloBase](http://chilobase.biologia.unipd.it) and
 [WoRMS](http://www.marinespecies.org), then use Sierwald's expertise to clarify any lingering questions.
 
 We were able to validate and synonymize 100% of these names via the methods above.
 
 ### Insecta (n=5616)
 
-Proposed workflow determined by @ekrimmel and Sierwald was to have CHAS validate names against the Field Museum's (FMNH) digitized entomology collections, then determine next steps based on remaining unverified names and which orders/families they belonged to.
+Proposed workflow determined by [@ekrimmel](https://github.com/ekrimmel) and Sierwald was to have CHAS validate names against the Field Museum's (FMNH) digitized entomology collections, then determine next steps based on remaining unverified names and which orders/families they belonged to.
 
-Robin Delapena (Collections Assistant at FMNH) downloaded unique names by taxonomic order from FMNH's entomology collections in EMu. FMNH does not store old taxonomic synonyms, but as specimens are digitized their taxonomic identification is updatedso we assumed that all taxonomy included in the EMu export was current. @ekrimmel validated CHAS names against this data from FMNH, with the results shown in the table below.
+Robin Delapena (Collections Assistant at FMNH) downloaded unique names by taxonomic order from FMNH's entomology collections in EMu. FMNH does not store old taxonomic synonyms, but as specimens are digitized their taxonomic identification is updatedso we assumed that all taxonomy included in the EMu export was current. [@ekrimmel](https://github.com/ekrimmel) validated CHAS names against this data from FMNH, with the results shown in the table below.
 
 The Hemiptera names were entered as collection units from our collection during the late 90's by Jim Louderman, under Margaret Thayer's (Insects curator) direction. The names were compared against a Hemiptera catalog that Maragaret found, we are not sure which one at this point.
 So, our Hemiptera names in EMu are most likely somewhat outdated, but most likely quite accurate for the time. There is a rather recent Hemiptera catalog: Henry & Froeschner, 1988. It is in our Library call # QL 522.1C27h. There is also an updated online checklist for Hemiptera of Oklahoma: http://entoplp.okstate.edu/museum/hemiptera.htm
@@ -51,6 +55,8 @@ So, our Hemiptera names in EMu are most likely somewhat outdated, but most likel
 Total found between ITIS, CoL, and Global Names was 3709 (1907 not found).
 
 Next steps: cross-reference with SCAN. Identify taxonomic groups in need of expert opinion.
+
+* * *
 
 ## Step 3, Using the taxon authority to clean specimen data
 
