@@ -35,7 +35,7 @@ If the following column sets contain information that matches, we will assume th
 
 -	**CAT – Collection:** Begin by sorting on this column and dealing with any rows that do not have the value “Malacology.” These rows may be related to the specimen in the malacology inventory data, but also could be related to a specimen with the same catalog number in a different collection. If the information from the original catalog books is not related to the specimen in the inventory data, mark the row “not a match” in the Yvi’s Status column. If the information does match, mark the row “y” in the Status column and also change the value of Cat – Collection to “Malacology.” This is the only time you will ever edit the content of a blue cell, and the ONLY TIME YOU WILL EDIT THE CONTENT OF ANY CELL DURING THIS STAGE (other than in Status).
 
- > Pay special attention to duplicate catalog numbers! Our script will have pulled in information from the catalog book that does not match at least one of any set of duplicate catalog numbers. You need to determine which catalog number in the malacology data is also referred to by the catalog book data.**
+ > Pay special attention to duplicate catalog numbers! Our script will have pulled in information from the catalog book that does not match at least one of any set of duplicate catalog numbers. You need to determine which catalog number in the malacology data is also referred to by the catalog book data.
 
 -	**CAT – Accn:** Compare to ACCN.
 
