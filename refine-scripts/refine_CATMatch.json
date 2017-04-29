@@ -1,7 +1,7 @@
 [
   {
     "op": "core/column-addition",
-    "description": "Create column CAT - Collection at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Collection'].value[0]",
+    "description": "Create column CAT - Collection at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Collection'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -9,12 +9,12 @@
     "newColumnName": "CAT - Collection",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Collection'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Collection'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Collection'].value[0]",
+    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Collection'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -22,12 +22,12 @@
     "newColumnName": "2",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Collection'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Collection'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Collection'].value[0]",
+    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Collection'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -35,12 +35,12 @@
     "newColumnName": "3",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Collection'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Collection'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Collection'].value[0]",
+    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Collection'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -48,7 +48,7 @@
     "newColumnName": "4",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Collection'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Collection'].value[0]",
     "onError": "set-to-blank"
   }
   {
@@ -107,7 +107,7 @@
   },
   {
     "op": "core/column-addition",
-    "description": "Create column CAT - Col Num at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Collection Number'].value[0]",
+    "description": "Create column CAT - Col Num at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Collection Number'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -115,12 +115,12 @@
     "newColumnName": "CAT - Col Num",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Collection Number'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Collection Number'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Collection Number'].value[0]",
+    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Collection Number'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -128,12 +128,12 @@
     "newColumnName": "2",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Collection Number'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Collection Number'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Collection Number'].value[0]",
+    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Collection Number'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -141,12 +141,12 @@
     "newColumnName": "3",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Collection Number'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Collection Number'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Collection Number'].value[0]",
+    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Collection Number'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -154,7 +154,7 @@
     "newColumnName": "4",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Collection Number'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Collection Number'].value[0]",
     "onError": "set-to-blank"
   }
   {
@@ -213,7 +213,7 @@
   },
   {
     "op": "core/column-addition",
-    "description": "Create column CAT - Accn at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Accession Number'].value[0]",
+    "description": "Create column CAT - Accn at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Accession Number'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -221,12 +221,12 @@
     "newColumnName": "CAT - Accn",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Accession Number'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Accession Number'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Accession Number'].value[0]",
+    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Accession Number'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -234,12 +234,12 @@
     "newColumnName": "2",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Accession Number'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Accession Number'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Accession Number'].value[0]",
+    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Accession Number'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -247,12 +247,12 @@
     "newColumnName": "3",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Accession Number'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Accession Number'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Accession Number'].value[0]",
+    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Accession Number'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -260,7 +260,7 @@
     "newColumnName": "4",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Accession Number'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Accession Number'].value[0]",
     "onError": "set-to-blank"
   }
   {
@@ -319,7 +319,7 @@
   },
   {
     "op": "core/column-addition",
-    "description": "Create column CAT - Number of Specimens at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Number of Specimens'].value[0]",
+    "description": "Create column CAT - Number of Specimens at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Number of Specimens'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -327,12 +327,12 @@
     "newColumnName": "CAT - Number of Specimens",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Number of Specimens'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Number of Specimens'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Number of Specimens'].value[0]",
+    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Number of Specimens'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -340,12 +340,12 @@
     "newColumnName": "2",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Number of Specimens'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Number of Specimens'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Number of Specimens'].value[0]",
+    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Number of Specimens'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -353,12 +353,12 @@
     "newColumnName": "3",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Number of Specimens'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Number of Specimens'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Number of Specimens'].value[0]",
+    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Number of Specimens'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -366,7 +366,7 @@
     "newColumnName": "4",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Number of Specimens'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Number of Specimens'].value[0]",
     "onError": "set-to-blank"
   }
   {
@@ -425,7 +425,7 @@
   },
   {
     "op": "core/column-addition",
-    "description": "Create column CAT - Identification at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Identification'].value[0]",
+    "description": "Create column CAT - Identification at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Identification'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -433,12 +433,12 @@
     "newColumnName": "CAT - Identification",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Identification'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Identification'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Identification'].value[0]",
+    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Identification'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -446,12 +446,12 @@
     "newColumnName": "2",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Identification'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Identification'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Identification'].value[0]",
+    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Identification'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -459,12 +459,12 @@
     "newColumnName": "3",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Identification'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Identification'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Identification'].value[0]",
+    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Identification'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -472,7 +472,7 @@
     "newColumnName": "4",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Identification'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Identification'].value[0]",
     "onError": "set-to-blank"
   }
   {
@@ -531,7 +531,7 @@
   },
   {
     "op": "core/column-addition",
-    "description": "Create column CAT - Locality at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Locality'].value[0]",
+    "description": "Create column CAT - Locality at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Locality'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -539,12 +539,12 @@
     "newColumnName": "CAT - Locality",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Locality'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Locality'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Locality'].value[0]",
+    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Locality'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -552,12 +552,12 @@
     "newColumnName": "2",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Locality'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Locality'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Locality'].value[0]",
+    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Locality'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -565,12 +565,12 @@
     "newColumnName": "3",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Locality'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Locality'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Locality'].value[0]",
+    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Locality'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -578,7 +578,7 @@
     "newColumnName": "4",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Locality'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Locality'].value[0]",
     "onError": "set-to-blank"
   }
   {
@@ -637,7 +637,7 @@
   },
   {
     "op": "core/column-addition",
-    "description": "Create column CAT - Age at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Age'].value[0]",
+    "description": "Create column CAT - Age at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Age'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -645,12 +645,12 @@
     "newColumnName": "CAT - Age",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Age'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Age'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Age'].value[0]",
+    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Age'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -658,12 +658,12 @@
     "newColumnName": "2",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Age'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Age'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Age'].value[0]",
+    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Age'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -671,12 +671,12 @@
     "newColumnName": "3",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Age'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Age'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Age'].value[0]",
+    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Age'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -684,7 +684,7 @@
     "newColumnName": "4",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Age'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Age'].value[0]",
     "onError": "set-to-blank"
   }
   {
@@ -743,7 +743,7 @@
   },
   {
     "op": "core/column-addition",
-    "description": "Create column CAT - Sex at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Sex'].value[0]",
+    "description": "Create column CAT - Sex at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Sex'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -751,12 +751,12 @@
     "newColumnName": "CAT - Sex",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Sex'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Sex'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Sex'].value[0]",
+    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Sex'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -764,12 +764,12 @@
     "newColumnName": "2",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Sex'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Sex'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Sex'].value[0]",
+    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Sex'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -777,12 +777,12 @@
     "newColumnName": "3",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Sex'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Sex'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Sex'].value[0]",
+    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Sex'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -790,7 +790,7 @@
     "newColumnName": "4",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Sex'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Sex'].value[0]",
     "onError": "set-to-blank"
   }
   {
@@ -849,7 +849,7 @@
   },
   {
     "op": "core/column-addition",
-    "description": "Create column CAT - Received From at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Received From'].value[0]",
+    "description": "Create column CAT - Received From at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Received From'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -857,12 +857,12 @@
     "newColumnName": "CAT - Received From",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Received From'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Received From'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Received From'].value[0]",
+    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Received From'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -870,12 +870,12 @@
     "newColumnName": "2",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Received From'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Received From'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Received From'].value[0]",
+    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Received From'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -883,12 +883,12 @@
     "newColumnName": "3",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Received From'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Received From'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Received From'].value[0]",
+    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Received From'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -896,7 +896,7 @@
     "newColumnName": "4",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Received From'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Received From'].value[0]",
     "onError": "set-to-blank"
   }
   {
@@ -955,7 +955,7 @@
   },
   {
     "op": "core/column-addition",
-    "description": "Create column CAT - Collected By at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Collected By'].value[0]",
+    "description": "Create column CAT - Collected By at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Collected By'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -963,12 +963,12 @@
     "newColumnName": "CAT - Collected By",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Collected By'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Collected By'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Collected By'].value[0]",
+    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Collected By'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -976,12 +976,12 @@
     "newColumnName": "2",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Collected By'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Collected By'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Collected By'].value[0]",
+    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Collected By'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -989,12 +989,12 @@
     "newColumnName": "3",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Collected By'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Collected By'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Collected By'].value[0]",
+    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Collected By'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -1002,7 +1002,7 @@
     "newColumnName": "4",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Collected By'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Collected By'].value[0]",
     "onError": "set-to-blank"
   }
   {
@@ -1061,7 +1061,7 @@
   },
   {
     "op": "core/column-addition",
-    "description": "Create column CAT - Date of Collection at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Date of Collection'].value[0]",
+    "description": "Create column CAT - Date of Collection at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Date of Collection'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -1069,12 +1069,12 @@
     "newColumnName": "CAT - Date of Collection",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Date of Collection'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Date of Collection'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Date of Collection'].value[0]",
+    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Date of Collection'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -1082,12 +1082,12 @@
     "newColumnName": "2",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Date of Collection'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Date of Collection'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Date of Collection'].value[0]",
+    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Date of Collection'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -1095,12 +1095,12 @@
     "newColumnName": "3",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Date of Collection'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Date of Collection'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Date of Collection'].value[0]",
+    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Date of Collection'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -1108,7 +1108,7 @@
     "newColumnName": "4",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Date of Collection'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Date of Collection'].value[0]",
     "onError": "set-to-blank"
   }
   {
@@ -1167,7 +1167,7 @@
   },
   {
     "op": "core/column-addition",
-    "description": "Create column CAT - Remarks at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Remarks'].value[0]",
+    "description": "Create column CAT - Remarks at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Remarks'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -1175,12 +1175,12 @@
     "newColumnName": "CAT - Remarks",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'cat num').cells['Remarks'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 00001-08000', 'Catalog Number').cells['Remarks'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Remarks'].value[0]",
+    "description": "Create column 2 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Remarks'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -1188,12 +1188,12 @@
     "newColumnName": "2",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'cat num').cells['Remarks'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 08001-16000', 'Catalog Number').cells['Remarks'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Remarks'].value[0]",
+    "description": "Create column 3 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Remarks'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -1201,12 +1201,12 @@
     "newColumnName": "3",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','cat num').cells['Remarks'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 16001-24000','Catalog Number').cells['Remarks'].value[0]",
     "onError": "set-to-blank"
   },
   {
     "op": "core/column-addition",
-    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Remarks'].value[0]",
+    "description": "Create column 4 at index 2 based on column CAT_NUM using expression grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Remarks'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
@@ -1214,7 +1214,7 @@
     "newColumnName": "4",
     "columnInsertIndex": 2,
     "baseColumnName": "CAT_NUM",
-    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','cat num').cells['Remarks'].value[0]",
+    "expression": "grel:cell.cross('Original Catalog Book 24001-32000','Catalog Number').cells['Remarks'].value[0]",
     "onError": "set-to-blank"
   }
   {
