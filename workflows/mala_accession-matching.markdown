@@ -89,15 +89,25 @@ After using Refine to match Arctos data to the spreadsheet data, the only ACCN n
   * If available, be sure to import cleaned catalog data at the start of the process as it will make identification easier. If no cleaned catalog data is available (as was the case for us), track your progress using "check" in the confirmation column or "no" in the compared with catalog column. When catalog data is available, import it into the correct columns and start back at the top of the inventory data.
   
   * Attempt to match up the unknown accession numbers using the donor, Arctos-ACCN, date and locality, and catalog information, if available. If a number can be identified with at least three pieces of information, enter it and mark "Done" in the confirmation column. If no catalog data is available, but two pieces of data match, enter it and mark "Check" in the confirmation column. If only two pieces of data match again, enter "No" in the confirmation column and flag the entry for later comparisons. If only the name matches, the ACCN will remain "?" and will have a "No" in the confirmation column.
+  
+  * When the end of the donor column is reached, resort using the agency and repeat the process.
 
-  * There may be inconsistencies between donors from different sources. Many of these will have already been flagged in Process 2. Try to identify the correct owner and accession number by comparing the dates and localities of each donor cluster. If the donor still cannot be identified, make a note in the remarks and flag the entry.
+  * There may be inconsistencies between donors from different sources. Many of these will have already been flagged in Process 2. Try to identify the correct owner and accession number by comparing the dates and localities of each donor cluster. If the donor still cannot be identified, make a note in the remarks and flag the entry. Where appropriate, note whether multiple accessions are possible in the remarks column.
   
 ### Process 5: Creative Accessions and FIC Identification
 There may still be a significant number of entries that have no donor or agency listed, but do have an accession number, or information in the catalog books but not in the spreadsheet. All of this data can help identify FIC's and confirm the work already completed. 
 
   * First pull in all of the relevant donor and agency data from FIC entries, if you have not done so already. Information from inventory labels may be useful as well. Use a filter to find relevant names in that data.
   * Next, pull in relevant data from the catalog books, including accession numbers (if not already confirmed or guessed at), donors, and dates. 
-  * 
+  * Sort the Excel sheet by ACCN-Sam and then by Higher Geography and Specific Locality.
+  * Identify inconsistencies in each cluster of accession numbers and correct or make notes accordingly. 
+  
+### Process 6: Final Checks and Prepping Data for Reintegration into the Master Spreadsheet
+Ensure as many unidentified entries as possible have information with them. 
+  * Sort the Excel sheet by Donor one more time and try to match up any ?'s or FICs using the same criteria as Process 4
+  * Ensure every entry with information has been checked with the catalog data and has a confirmation value (Not Confirmed or Confirmed). There should be no entries that need to be "Checked" with the data.
+  * Ensure that all flagged entries have information in the remarks about why they were flagged. This is especially important for any FIC's which were identified, because there is no other way to follow the logic used to identify it.
+  * All Done!
   
   
   
