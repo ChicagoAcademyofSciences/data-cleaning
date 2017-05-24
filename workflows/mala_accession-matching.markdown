@@ -39,7 +39,7 @@ Also, ensure that there is a column in Google Refine to track the technician's p
 
 ### Process 2: Cleaning the data
 
-Much of the initial data in both Excel and Refine was not standardized, meaning there were many typos and no efficient methods to sort. Refine provides excellent tools in faceting and reconciling these kinds of data, and is the recommened way to clean data in the inventory spreadsheet. Ideally, the Received from, Higher Geography, and Specific Locality should be reconciled and then formatted as following:
+Much of the initial data in both Excel and Refine was not standardized, meaning there were many typos and variations in names, and no efficient methods to sort. Refine provides excellent tools in faceting and reconciling these kinds of data, and is the recommened way to clean data in the inventory spreadsheet. Ideally, the Received from, Higher Geography, and Specific Locality should be reconciled and then formatted as following:
 
   * Received From/Collected By: LASTNAME, FIRSTNAME
   * Associated with Agency: AGENCY NAME, EXPEDITION/COLLECTING EVENT (e.g. Florida Expedition, 1877 or Natural History Survey. Both are from the Chicago Academy of Sciences
@@ -52,7 +52,7 @@ If the file size is too large, Refine may not run quickly enough to efficiently 
 
   * Sort the data by Arctos-Received From and begin to enter each name into the "Donor (Standard)/Best Guess (FLAG)" column using the standardization guidelines above. Correct only recognizable typos in the names, and leave first names and initials uncorrected. Use Copy/Paste or the drag tool to rapidly fill in cells with the corrected names.
   
-  * Repeat the process until all names in the Arctos-Received From and Received From/Presented by columns are entered into the standardized donor column. There will be cases in which the names don't match, in which case flag the entry in the Flags column and make a note in the remarks.
+  * Repeat the process until all names in the Arctos-Received From and Received From/Presented by columns are entered into the standardized donor column. IMPORTANT: There will be cases in which the names don't match, in which case flag the entry in the Flags column and make a note in the remarks.
   
   * Repeat this process for all the names in the "Collected by" or "COLLECTOR_AGENT" columns, but ONLY if there is no data in either the Arctos-Received from or the Received from/Presented by columns.
   
@@ -75,10 +75,43 @@ Since much of the data was not standardized until the middle of the project, Ref
   
   * Repeat the sorting and matching process for the "Received From", "COLLECTOR_AGENT_1", and "COLLECTOR_AGENT_2" columns. If no match is found, search the data by ACCN number and repeat the recording process. If there are still no matches, put a "Done-not found in spreadsheet data" in the "status" column of Refine.
   
-  * In some cases, the name in Arctos and the name in Received From will not match. More data is needed to establish the donor, so put a FLAG in the Flags column to mark it off and a "No" in the "ACCN Confirmed?" column to indicate lack of certainty.
+  * In some cases, the name in Arctos and the name in Received From will not match. More data is needed to establish the donor, so put a FLAG in the Flags column to mark it off and a "No" in the "ACCN Confirmed?" column to indicate lack of certainty. Then, place a "?" in the ACCN-Sam column.
   
-  * There will also be cases where multiple accession numbers may apply to the same entry. Again, more data will be needed for a determination, so mark it with a FLAG in Excel and make a note of possible accession numbers in the Remarks column of the Excel data. 
+  * There will also be cases where multiple accession numbers may apply to the same entry. Again, more data will be needed for a determination, so mark it with a FLAG in Excel and make a note of possible accession numbers in the Remarks column of the Excel data.
+  
+  * In all cases where there is a donor or agency but no definite accession number, put a "?" in the ACCN-Sam column to mark it as unknown
 
-### Process 4: 
+### Process 4: Initial Accession Matching and Donor Reconciliation
 
-After using Refine to match Arctos data to the spreadsheet data, the only ACCN numbers left were the unknowns, "Yes", and "No" entries.
+After using Refine to match Arctos data to the spreadsheet data, the only ACCN numbers left should be the ones not in Arctos, the unknowns, "Yes", and "No" entries.
+  * Sort the Excel sheet by standardized donor name, and then by accession number, and then by higher geography and specific locality. This will result in clusters of names organized by number and place, with all of the unidentified accessions (?, Yes, No, and blank) at the bottom of each cluster.
+  
+  * If available, be sure to import cleaned catalog data at the start of the process as it will make identification easier. If no cleaned catalog data is available (as was the case for us), track your progress using "check" in the confirmation column or "no" in the compared with catalog column. When catalog data is available, import it into the correct columns and start back at the top of the inventory data.
+  
+  * Attempt to match up the unknown accession numbers using the donor, Arctos-ACCN, date and locality, and catalog information, if available. If a number can be identified with at least three pieces of information, enter it and mark "Done" in the confirmation column. If no catalog data is available, but two pieces of data match, enter it and mark "Check" in the confirmation column. If only two pieces of data match again, enter "No" in the confirmation column and flag the entry for later comparisons. If only the name matches, the ACCN will remain "?" and will have a "No" in the confirmation column.
+
+  * There may be inconsistencies between donors from different sources. Many of these will have already been flagged in Process 2. Try to identify the correct owner and accession number by comparing the dates and localities of each donor cluster. If the donor still cannot be identified, make a note in the remarks and flag the entry.
+  
+### Process 5: Creative Accessions and FIC Identification
+There may still be a significant number of entries that have no donor or agency listed, but do have an accession number, or information in the catalog books but not in the spreadsheet. All of this data can help identify FIC's and confirm the work already completed. 
+
+  * First pull in all of the relevant donor and agency data from FIC entries, if you have not done so already. Information from inventory labels may be useful as well. Use a filter to find relevant names in that data.
+  * Next, pull in relevant data from the catalog books, including accession numbers (if not already confirmed or guessed at), donors, and dates. 
+  * 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
