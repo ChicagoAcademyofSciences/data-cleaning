@@ -5,16 +5,15 @@ The goal of this project is to identify inventoried specimens associated with ex
 
 ### Background Information
 
-The original spreadsheet used for this project was the Mala_Master_2017-03-03 Excel spreadsheet on the museum's L server. In addition, relevant data already uploaded to Arctos was put into Google Refine. 
+The original spreadsheet used for this project was the Mala_Master_2017-03-03 Excel spreadsheet on the museum's L server. In addition, relevant data already uploaded to Arctos was put into Google Refine. The Refine spreadsheet contained a status column for tracking the technician's progress during the first matching phase, ACCN numbers, the Received From (donor) name, received date, nature of material, and remarks related to the accession. 
 
-[Offer a step-by-step list of processes you took before the data underwent this process]
 
 ### Process 1: Accessing and maintaining the spreadsheet
 Firstly, the master spreadsheet was saved as a new file so that changes could be more easily tracked. In a separate folder, save a copy of the Mala_Master spreadsheet as "Mala_AccessionsMatching_YYYY-MM-DD", with the day's date at the end. The file was saved as a new Excel sheet every workday with the current date.
 
 Several columns were needed in the Excel spreadsheet in order to keep track of progress, new data, and possible issues with existing data. These columns were kept together for more efficient sorting by the technician. New columns include:
 
-  * "Best Guess" or determination columns, which will contain details about confirmed or possible accession numbers, donors, agencies, and/or dates and locality. All but the latter two were used in this project. These columns were called "ACCN-Sam", "Donor (Standard)/Best Guess (FLAG)", and "Agency (Standard)/Best Guess (FLAG)".
+  * "Best Guess" or determination columns, which will contain details about confirmed or possible accession numbers, standardized donor and agency names, and/or formatted dates and locality information. All but the dates were used in this project. These columns were called "ACCN-Sam", "Donor (Standard)/Best Guess (FLAG)", and "Agency (Standard)/Best Guess (FLAG)". "HIGHER GEOGRAPHY" and "SPECIFIC LOCALITY" were added later during the data cleaning process and made sorting much easier.
 
   * Progress tracking columns, which were used as a record of progress in matching the spreadsheet data to other data sources. These were titled "Compared to ARCTOS in Refine?" and "Checked with Catalog"
 
@@ -36,13 +35,32 @@ One of the other phases in this project involved comparing the accessions data t
 
 Both sets of columns were darkened for more efficient sorting and tabulation.
 
-
+Also, ensure that there is a column in Google Refine to track the technician's progress. The column will indicate either "Done" or "Done-not found in spreadsheet" to record whether an accession in Arctos is present in the inventory data.
 
 ### Process 2: Cleaning the data
 
-Much of the initial data was not standardized, meaning there were many typos and no efficient methods to sort in either Excel or Refine. 
+Much of the initial data in both Excel and Refine was not standardized, meaning there were many typos and no efficient methods to sort. Refine provides excellent tools in faceting and reconciling these kinds of data, and is the recommened way to clean data in the inventory spreadsheet. Ideally, the Received from, Higher Geography, and Specific Locality should be reconciled and then formatted as following:
 
+  * Received From/Collected By: LASTNAME, FIRSTNAME
+  * Associated with Agency: AGENCY NAME, EXPEDITION/COLLECTING EVENT (e.g. Florida Expedition, 1877 or Natural History Survey. Both are from the Chicago Academy of Sciences
+  * Higher Geography: Continent/Ocean, Country/Island Group, State/Province/Specific Island
+  * Specific Locality: County, City, Locality/Body of Water. Adding a standard Specific Feature or Direction field (e.g. bridge 4 miles S of Chicago) would have been helpful in getting a more accurate sort, but was not used in this project.
+  
+Ensure that the newly reconciled data goes into the appropriate columns which were inserted as the first stage of the project. NONE of the verbatim data should be changed in the spreadsheet.
 
+If the file size is too large, Refine may not run quickly enough to efficiently get through all of the inventory data. This was the case with our run through, where standardizing names, higher geography, and localities were not done until the middle of the project. Allocating more memory to the program may help, but if it does not you will have to standardize the data manually. Since this was the case, only the names and agencies were done to maintain efficiency. To do this directly in Excel:
+
+  * Sort the data by Arctos-Received From and begin to enter each name into the "Donor (Standard)/Best Guess (FLAG)" column using the standardization guidelines above. Correct only recognizable typos in the names, and leave first names and initials uncorrected. Use Copy/Paste or the drag tool to rapidly fill in cells with the corrected names.
+  
+  * Repeat the process until all names in the Arctos-Received From and Received From/Presented by columns are entered into the standardized donor column. There will be cases in which the names don't match, in which case flag the entry in the Flags column and make a note in the remarks.
+  
+  * Repeat this process for all the names in the "Collected by" or "COLLECTOR_AGENT" columns, but ONLY if there is no data in either the Arctos-Received from or the Received from/Presented by columns.
+  
+  * Finally, repeat the process for all of the agency names, but record them in the Agency (Standard)/Best Guess (FLAG) column. 
+  
+Standardized locality information was added at a later stage of the project, and steps for that are below:
+
+  * [Steps for standardizing locality information]
 
 
 ### Process 3: Using Google Refine to confirm data and find easy accession matches
@@ -53,13 +71,13 @@ Since much of the data was not standardized until the middle of the project, Ref
   
   * Then, sort the Excel spreadsheet by the Arctos-Received From column. For larger groups of names, it will be useful to do a custom sort of "Arctos-Received from" and "ACCN".
   
-  * Scroll through the list or use a Ctrl+F search to match the data in Refine with an entry in the Excel spreadsheet. If a definite match is found, put a "Yes" in the "Compared to ARCTOS?" column and a "Check" in the "ACCN Confirmed?" column. This will signify the record is ready to be checked and confirmed with other data sources. 
+  * Scroll through the list or use a Ctrl+F search to match the data in Refine with an entry in the Excel spreadsheet. If a definite match is found, put a "Yes" in the "Compared to ARCTOS?" column and a "Check" in the "ACCN Confirmed?" column. This will signify the record is ready to be checked and confirmed with other data sources. Then put a "Done" in the "status" column on Refine.
   
-  * Repeat the sorting and matching process for the "Received From", "COLLECTOR_AGENT_1", and "COLLECTOR_AGENT_2" columns. 
+  * Repeat the sorting and matching process for the "Received From", "COLLECTOR_AGENT_1", and "COLLECTOR_AGENT_2" columns. If no match is found, search the data by ACCN number and repeat the recording process. If there are still no matches, put a "Done-not found in spreadsheet data" in the "status" column of Refine.
   
   * In some cases, the name in Arctos and the name in Received From will not match. More data is needed to establish the donor, so put a FLAG in the Flags column to mark it off and a "No" in the "ACCN Confirmed?" column to indicate lack of certainty.
   
-  * There will also be cases where multiple accession numbers may apply to the same entry. Again, more data will be needed for a determination, so mark it with a FLAG in Excel. 
+  * There will also be cases where multiple accession numbers may apply to the same entry. Again, more data will be needed for a determination, so mark it with a FLAG in Excel and make a note of possible accession numbers in the Remarks column of the Excel data. 
 
 ### Process 4: 
 
