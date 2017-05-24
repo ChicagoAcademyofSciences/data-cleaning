@@ -47,7 +47,20 @@ Much of the initial data was not standardized, meaning there were many typos and
 
 ### Process 3: Using Google Refine to confirm data and find easy accession matches
 
+Since much of the data was not standardized until the middle of the project, Refine was used to more efficiently facet and sort the data to identify accessions records. 
 
+  * First, facet or cluster the data by donor name. This will provide all of the accessions associated with a single individual. Flagging or reconciling separate donor names may be helpful in sorting out relevant data.
+  
+  * Then, sort the Excel spreadsheet by the Arctos-Received From column. For larger groups of names, it will be useful to do a custom sort of "Arctos-Received from" and "ACCN".
+  
+  * Scroll through the list or use a Ctrl+F search to match the data in Refine with an entry in the Excel spreadsheet. If a definite match is found, put a "Yes" in the "Compared to ARCTOS?" column and a "Check" in the "ACCN Confirmed?" column. This will signify the record is ready to be checked and confirmed with other data sources. 
+  
+  * Repeat the sorting and matching process for the "Received From", "COLLECTOR_AGENT_1", and "COLLECTOR_AGENT_2" columns. 
+  
+  * In some cases, the name in Arctos and the name in Received From will not match. More data is needed to establish the donor, so put a FLAG in the Flags column to mark it off and a "No" in the "ACCN Confirmed?" column to indicate lack of certainty.
+  
+  * There will also be cases where multiple accession numbers may apply to the same entry. Again, more data will be needed for a determination, so mark it with a FLAG in Excel. 
 
+### Process 4: 
 
-### Process 4: Final accessions matching
+After using Refine to match Arctos data to the spreadsheet data, the only ACCN numbers left were the unknowns, "Yes", and "No" entries.
