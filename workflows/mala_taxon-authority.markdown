@@ -4,7 +4,9 @@
 
 ## Step 1, Preparing original taxonomic data
 
-CHAS malacology specimens were inventoried in separate Excel spreadsheets by taxonomic group. In order to clean up and synonymize taxonomic names, we began by pulling all taxonomic identifications from all malacology spreadsheets into a single field, *SYNONYM (data directly from spreadsheet)*. We retained the data verbatim in this field as primary keys back to our data, then duplicated them into a new field, *TAXON (to match to authority)*. Names in the latter field were cleaned by trimming extra spaces, return carriages, and special characters. They were then clustered to minimize the amount of unique names we had to synonymize.
+CHAS malacology specimens were inventoried in separate Excel spreadsheets by taxonomic group. In order to clean up and synonymize taxonomic names, we began by pulling former and current taxonomic identifications from all malacology spreadsheets into a single spreadsheet. Verbatim taxonomic data was retained as a primary key back to the master inventory data, then duplicated into a new field, *TAXON (original)*. Names in this field were cleaned by trimming extra spaces, return carriages, and special characters. They were then clustered to minimize the amount of unique names we had to synonymize, and to easily identify simple errors such as misspellings.
+
+5125 unique names.
 
 * * *
 
