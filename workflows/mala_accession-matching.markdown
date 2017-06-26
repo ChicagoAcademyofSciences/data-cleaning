@@ -109,19 +109,5 @@ Finally, it is necessary to ensure as many unidentified entries as possible have
   * Ensure that all flagged entries have information in the remarks about why they were flagged. This is especially important for any FIC's which were identified, because there is no other way to follow the logic used to identify it.
   * All Done!
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+### Process 7: Reintegrating Accession Matching data into the Master Spreadsheet
+Data from the process described above must be re-integrated into the master malacology data. This was done by pulling in information based on the unique ID of each row. Data from the accession matching overwrote data in the master spreadsheet, and provenance is noted in column *remarks - accession*. These remarks were standardized. A "[?]" beginning the *remarks - accession* column indicates that this row was not evaulated during the accession matching process described above (likely because the record did not have enough data to even attempt to match). "[unconfirmed]" in the column *ACCN* indicates that an accession number was assigned but uncertainty remains. These should be further evaulated before migrating to Arctos.
