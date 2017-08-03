@@ -4,15 +4,13 @@
 
 ## Step 1, Preparing original taxonomic data
 
-CHAS malacology specimens were inventoried in separate Excel spreadsheets by taxonomic group. In order to clean up and synonymize taxonomic names, we began by pulling former and current taxonomic identifications from all malacology spreadsheets into a single spreadsheet. Verbatim taxonomic data was retained as a primary key back to the master inventory data, then duplicated into a new field, *TAXON (original)*. Names in this field were cleaned by trimming extra spaces, return carriages, and special characters. They were then clustered to minimize the amount of unique names we had to synonymize, and to easily identify simple errors such as misspellings.
-
-5125 unique names.
+CHAS malacology specimens were inventoried in separate Excel spreadsheets by taxonomic group. In order to clean up and synonymize taxonomic names, we began by pulling former and current taxonomic identifications from all malacology spreadsheets into a single field, *SYNONYM (data directly from spreadsheet)*. We retained the data verbatim in this field as a primary key back to the master inventory data, then duplicated them into a new field, *TAXON (original)*. Names in this field were cleaned by trimming extra spaces, return carriages, and special characters. They were then clustered to minimize the amount of unique names we had to synonymize, and to easily identify simple errors such as misspellings.
 
 * * *
 
 ## Step 2, Synonymizing with valid taxonomy
 
-### group (n=)
+### group (n=5125)
 
 Janeen Jones (FMNH) downloaded unique names by taxonomic order from FMNH's malacology collections in EMu. For mollusks (unlike insects) FMNH does store old taxonomic synonyms, which made this species list much more useful than what we were able to obtain for entomology. [@ekrimmel](https://github.com/ekrimmel) validated CHAS names against this data from FMNH, with the results shown in the table below.
 
