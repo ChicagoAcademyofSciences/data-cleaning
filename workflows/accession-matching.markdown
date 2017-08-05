@@ -61,9 +61,9 @@ Arctos accession data in OpenRefine was used to track whether or not an accessio
 
 ## Reintegrating accession matching data into master data (malacology)
 
-Data from the process above was reintegrated into the master malacology data by pulling in relevant spreadsheet columns (*ACCN-Sam*, *ACCN confirmed?*, *Flags - unable to confirm*, and *Remarks*) based on the unique ID of each row. The new data was reviewed a final time before it overwrote data in the master spreadsheet, with provenance and project technician notes standardized and recorded in the accession remarks.
+Data from the process above was reintegrated into the master malacology data by pulling in relevant spreadsheet columns (*ACCN-Sam*, *ACCN confirmed?*, *Flags - unable to confirm*, and *Remarks*) based on the unique ID of each row. The new data was reviewed a final time before it overwrote data in the master, with data provenance and project technician notes standardized and recorded in the accession remarks.
 
-The standardized project technician notes include:
+The standardized data provenance categories are:
 
 - "Accession number listed in inventory spreadsheet prior to 2017 Arctos migration" (n=8974)
 - "Accession number matched to specimen during 2017 Arctos migration process" (n=2095)
