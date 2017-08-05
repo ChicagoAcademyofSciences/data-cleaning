@@ -42,6 +42,29 @@ Robin Delapena (Collections Assistant at FMNH) downloaded unique names by taxono
 | 3	| *all Insecta* | [Global Names](http://globalnames.org)	| 1072	| % |
 | 	| *all Insecta* | UNMATCHED NAMES	| 1753	| % |
 
+** By Order
+
+| Priority | Group | # verified	| # unverified | Status |
+| :---: | --- | --- | ---: | ---: |
+| 	| Blattodea | 13 | 5 | pending |
+| 	| Coleoptera | 4201 | 2361 | pending |
+| 	| Dermaptera | 5 | 0	| complete |
+| 	| Diptera | 652	| 404 | pending |
+| 	| Ephemeroptera | 3 | 0 | complete |
+| 	| Hemiptera | 332 | 165	| pending |
+| 	| Hymenoptera | 200 | 77 | pending |
+| 	| Isoptera | 2 | 0 | complete |
+| 	| Mantodea | 8 | 3 | pending |
+| 	| Mecoptera | 3 | 0	| complete |
+| 	| Megaloptera | 5 | 0	| complete |
+| 	| Neuroptera | 10 | 0	| complete |
+| 	| Odonata | 52 	| 1	| pending |
+| 	| Orthoptera | 118 | 22	| pending |
+| 	| Phasmida | 5	| 0	| complete |
+| 	| Plecoptera | 9 | 5	| pending |
+| 	| Raphidoptera | 1	| 0	| complete |
+| 	| Trichoptera | 12	| 1	| pending |
+
 *Total found between ITIS, CoL, and Global Names was 3709 (1907 not found).*
 
 *Next steps: cross-reference with SCAN. Identify taxonomic groups in need of expert opinion.*
