@@ -36,7 +36,7 @@ Specimen rows in the Excel spreadsheet with existing accession numbers had Arcto
 
 The Excel spreadsheet and OpenRefine dataset were used simultaneously to  identify matches between inventoried specimens (in Excel) and Arctos accessions (in OpenRefine). OpenRefine facilitated faceting while Excel allowed the project technician to use visual flags like color, and to enter single-cell data more quickly.
 
-The technician attempted to match up specimens to accession numbers using information about the donor, the recieving date, the locality, and the taxonomy, as shown in the table below. When at least three of these categories matched between a specimen record and an accession record, the accession number was entered into the Excel spreadsheet and the row marked "done." When at least two of these categories matched, the accession number was entered into the Excel spreadsheet and the row marked "check." If only one of these categories matched, no accession number was entered into the Excel spreadsheet and the row was marked "no."
+The technician attempted to match up specimens to accession numbers using information about the donor, the receiving date, the locality, and the taxonomy, as shown in the table below. When at least three of these categories matched between a specimen record and an accession record, the accession number was entered into the Excel spreadsheet and the row marked "done." When at least two of these categories matched, the accession number was entered into the Excel spreadsheet and the row marked "check." If only one of these categories matched, no accession number was entered into the Excel spreadsheet and the row was marked "no."
 
 | Information | Columns in specimen data (Excel) | Columns in accession data (OpenRefine) |
 | --- | --- | --- |
@@ -69,4 +69,8 @@ The standardized project technician notes include:
 - "Accession number matched to specimen during 2017 Arctos migration process" (n=2095)
 - "Unable to match to specific accession during 2017 Arctos migration process" (n=4237)
 
-Many of the specimens in the malacology inventory data have very sparse collecting and receiving information, and we expected having a high percentage of specimens that we were unable to match to accession information. Of the 2095 specimen records with accession numbers matched via this process, 558 remain unconfirmed, but will still be migrated to Arctos under the unconfirmed accessions (with clear documentation of uncertainty). Accessions exist independantly from specimens in Arctos and we feel that making a connection, even where it is uncertain, will lead to better data accuracy than leaving our research hidden in remarks. If, at a later date, someone determines that an accession has been incorrectly applied to a specimen they can easily fix it in Arctos.
+Many of the specimens in the malacology inventory data have very sparse collecting and receiving information, and we expected having a high percentage of specimens that we were unable to match to accession information. Of the 2095 specimen records with accession numbers matched via this process, 558 remain unconfirmed, but will still be migrated to Arctos under the unconfirmed accessions (with clear documentation of uncertainty). Accessions exist independently from specimens in Arctos and we feel that making a connection, even where it is uncertain, will lead to better data accuracy than leaving our research hidden in remarks. If, at a later date, someone determines that an accession has been incorrectly applied to a specimen they can easily fix it in Arctos.
+
+## Reintegrating accession matching data into master data (entomology)
+
+Entomology work is currently in progress.
