@@ -3,3 +3,5 @@
 [PLACEHOLDER]
 
 *Need to flesh out collecting information for specimens referenced in archive materials. Target high potential materials.*
+
+Hulse field notes. Quadras field notes. Baker. Etc.
