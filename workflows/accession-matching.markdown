@@ -1,91 +1,72 @@
-# Accession Matching (malacology)
+# Accession Matching
 
-The goal of this process was to associate inventoried specimens with existing accession numbers where the accession information had previously been unknown.
+The goal of this process is to associate inventoried malacology and entomology specimens with existing accession numbers where the accession information had previously been unknown.
 
-The original spreadsheet used for this project was the [Mala_Master_2017-03-03 spreadsheet](). In addition, accession records from Arctos were downloaded and used in OpenRefine to track progress. The OpenRefine spreadsheet contained a status column for tracking the technician's progress during the first matching phase, ACCN numbers, the Received From (donor) name, received date, nature of material, and remarks related to the accession.
+## Preparing a working copy of accession records
 
-Accession records in Arctos, plus cards verified and paperwork accessible where necessary.
+All CHAS accession records are maintained in Arctos. These records originated from transcribed accession books, transcribed accession cards, and transcribed (where necessary) accession paperwork. Prior to beginning the accession matching process for the malacology and entomology collections, staff verified that all known accessions relevant to these collections were represented in Arctos.
 
-## Preparing the spreadsheet
+[@ekrimmel](https://github.com/ekrimmel) then downloaded a subset of CHAS accessions from Arctos containing anything with "mala%" or "inv%" in the *Nature of Material* field. These were used as [an OpenRefine dataset]() for the purposes of this process.
 
-Several columns were needed in the Excel spreadsheet in order to keep track of progress, new data, and possible issues with existing data:
+## Preparing the working spreadsheet (malacology)
 
-  * "Best Guess" or determination columns, which contained details about confirmed or possible accession numbers, standardized donor and agency names, and/or formatted locality information. These columns were called "ACCN-Sam", "Donor (Standard)/Best Guess (FLAG)", and "Agency (Standard)/Best Guess (FLAG)". "HIGHER GEOGRAPHY" and "SPECIFIC LOCALITY" were added later during the data cleaning process and made sorting by location much easier.
+Malacology work was conducted by [@samuelhowes24](https://github.com/samuelhowes24) using partially-cleaned specimen inventory data from *Mala_Master_2017-03-03.csv*. We used partially-cleaned inventory data because our time was constrained and we needed to have multiple staff working simultaneously on different processes; however, in the future we would save this accession matching process to do AFTER the [original catalog book matching](original-catalog-book-matching.markdown), which added a significant amount of information to our inventory data.
 
-  * Progress tracking column called "Compared to ARCTOS in Refine?".
+*Mala_Master_2017-03-03.csv* was combined with Arctos accession records using OpenRefine wherever the inventory data had an existing accession number. This dataset was then formatted as [an Excel spreadsheet](../working-files/Mala_ACCNMatch_2017-05-23.xlxs) to facilitate efficient work. Several columns were added to track progress, new data, and possible issues with existing data. These columns were:
 
-  * Degree of confidence/task columns, which were initially used as reminders of required actions for each accession entry. However, it was found that using a simpler system of Flags (in "Flags- unable to confirm") and actions (No, Check, and Done in "ACCN confirmed?") was much more effective at highlighting potential issues and confidence levels in accession number designations.
+  - "Best Guess" or determination columns, which contained details about confirmed or possible accession numbers (*ACCN-Sam*), standardized donor (*Donor (Standard)/Best Guess (FLAG)*) and agency names (*Agency (Standard)/Best Guess (FLAG)*), and reformatted locality information where necessary.
 
-  * New data for Arctos. In a few cases, donor and received date information was found in the spreadsheet but not on Arctos. This column was used to store this kind of data for bulk corrections in Arctos to be made at any stage of the project. [UPDATED BY HAND]
+  - A progress-tracking column called *Compared to ARCTOS in Refine?*.
 
-  * A remarks column, for catching any extra data or pertinent observations throughout each phase.
+  - Degree of confidence/task columns, which used a simple system of flags (in *Flags- unable to confirm*) and actions ("No," "Check," or "Done" in *ACCN confirmed?*) to highlight potential issues and confidence levels in accession number designations.
 
-One of the other phases in this project involved comparing the accessions data to cleaned catalog data. While this step occurred near the end of the project in order to maintain an efficient workflow, it would have been helpful to see what other sources of data would become available. As such, a few other columns should be included in the new spreadsheet, adjacent to the equivalent accessions columns:
+  - A column to track new data for Arctos. In a few cases, donor and receiving date information was found in the inventory spreadsheet but had not been present on Arctos. This information was stored in the column temporarily and later updated directly in Arctos.
 
-  * Catalog numbers (CAT NUM) which contains the catalog number (or FIC if unknown) for each entry
+  - A remarks column, for catching any extra data or pertinent observations made by the project technician.
 
-  * ACCN numbers from catalog book (Catalog Book ACCN) which lists the accession numbers from the catalog data. These may or may not match the inventory data, but proved useful in correcting and identifying accessions at the end of the project.
+## Preparing the working spreadsheet (entomology)
 
-  * Received from and Collector (Catalog Books Received From and Catalog Books COLLECTOR_AGENT_1) for relevant donor data. This also proved useful in identifying accessions.
+Entomology work is currently in progress.
 
-  * Date columns (VERBATIM_DATE, BEGAN_DATE, END_DATE). Often the only source of date information is in the catalog books. This can help distinguish between two otherwise identical accessions.
+## Confirming existing accession numbers
 
-A column was also made in OpenRefine to track the technician's progress. The column will indicate either "Done" or "Done-not found in spreadsheet" to record whether an accession in Arctos is present in the inventory data.
+Specimen rows in the Excel spreadsheet with existing accession numbers had Arctos accession information pulled into the spreadsheet using OpenRefine. The accession data from Arctos was compared against the specimen data in Excel to confirm that the accession number listed during the inventory was correct.
 
-## Cleaning the data
+## Identifying new accession matches
 
-Much of the initial data in both Excel and Refine was not standardized, meaning there were many typos and variations in names, and no efficient methods to sort. Used OpenRefine and some by hand.
+The Excel spreadsheet and OpenRefine dataset were used simultaneously to  identify matches between inventoried specimens (in Excel) and Arctos accessions (in OpenRefine). OpenRefine facilitated faceting while Excel allowed the project technician to use visual flags like color, and to enter single-cell data more quickly.
 
-## Using OpenRefine to confirm data and find easy accession matches
+The technician attempted to match up specimens to accession numbers using information about the donor, the recieving date, the locality, and the taxonomy, as shown in the table below. When at least three of these categories matched between a specimen record and an accession record, the accession number was entered into the Excel spreadsheet and the row marked "done." When at least two of these categories matched, the accession number was entered into the Excel spreadsheet and the row marked "check." If only one of these categories matched, no accession number was entered into the Excel spreadsheet and the row was marked "no."
 
-Since much of the data was not standardized until the middle of the project, Refine was used to more efficiently facet and sort the data to identify accessions records.
+| Information | Columns in specimen data (Excel) | Columns in accession data (OpenRefine) |
+| --- | --- | --- |
+| DONOR | Received From, Donor (Standard)/Best Guess, Agency (Standard)/Best Guess, Collector_Agent | received_from |
+| DATE | Verbatim_Date, Began_Date, Ended_Date | received_date |
+| LOCALITY | Higher_Geog, Spec_Locality | nature_of_material, remarks |
+| TAXONOMY | Family, Genus, Species, Subspecies | nature_of_material |
 
-  * First, facet or cluster the data by donor name. This will provide all of the accessions associated with a single individual. Faceting by flag or reconciling separate donor names may be helpful in sorting out relevant data.
+Specimens marked "check" were reviewed again and either confirmed with further research, or if unable to be resolved, then left with notes from the project technician documenting his research and decision.
 
-  * Then, sort the Excel spreadsheet by the Arctos-Received From column. For larger groups of names, it will be useful to do a custom sort of "Arctos-Received from" and "ACCN".
+Several issues were encountered, including:
 
-  * Scroll through the list or use a Ctrl+F search to match the data in Refine with an entry in the Excel spreadsheet. If a definite match is found, put a "Yes" in the "Compared to ARCTOS?" column and a "Check" in the "ACCN Confirmed?" column. This will signify the record is ready to be checked and confirmed with other data sources. Then put a "Done" in the "status" column on Refine.
+  - Because the specimen inventory data being used in this process was not yet fully cleaned, much of the information was not as standardized as it needed to be for effective sorting in Excel, e.g. agent names were often formatted differently for the same person. The project technician did quick pass-throughs to clean up information as necessary.
 
-  * Repeat the sorting and matching process for the "Received From", "COLLECTOR_AGENT_1", and "COLLECTOR_AGENT_2" columns. If no match is found, search the data by ACCN number and repeat the recording process. If there are still no matches, put a "Done-not found in spreadsheet data" in the "status" column of Refine.
+  - In some cases, donor agents did not match between the Arctos accession record and the inventoried specimen data. These records were flagged and additional research done to confirm or otherwise explain. Where confirmation was impossible, the project technician left notes documenting his research and decision.
 
-  * In some cases, the name in Arctos and the name in Received From will not match. More data is needed to establish the donor, so put a FLAG in the Flags column to mark it off and a "No" in the "ACCN Confirmed?" column to indicate lack of certainty. Then, place a "?" in the ACCN-Sam column. Finally, make a remark about which possible donors and numbers the record could be.
+  - In cases where multiple accession numbers were applied to the same specimen these rows were flagged and researched further, with notes documenting any research and decision.
 
-  * There will also be cases where multiple accession numbers may apply to the same entry. Again, more data will be needed for a determination, so mark it with a FLAG in Excel and make a note of possible accession numbers in the Remarks column of the Excel data, where appropriate.
+## Tracking progress against Arctos accession information
 
-  * In all cases where there is a donor or agency listed in Excel but no definite accession number confirmable through Refine, put a "?" in the ACCN-Sam column to mark it as unknown
+Arctos accession data in OpenRefine was used to track whether or not an accession had shown up in the inventory data or not. The project technician indicated this by tagging accessions as either "done" or "done-not found in spreadsheet."
 
-## Initial Accession Matching and Donor Reconciliation
+## Reintegrating accession matching data into master data (malacology)
 
-After using Refine to match Arctos data to the spreadsheet data, the only ACCN numbers left should be the ones not in Arctos, the unknowns, "Yes", and "No" entries.
+Data from the process above was reintegrated into the master malacology data by pulling in relevant spreadsheet columns (*ACCN-Sam*, *ACCN confirmed?*, *Flags - unable to confirm*, and *Remarks*) based on the unique ID of each row. The new data was reviewed a final time before it overwrote data in the master spreadsheet, with provenance and project technician notes standardized and recorded in the accession remarks.
 
-  * Sort the Excel sheet by standardized donor name, and then by accession number, and then by higher geography and specific locality. This will result in clusters of names organized by number and place, with all of the unidentified accessions (?, Yes, No, and blank) at the bottom of each cluster.
+The standardized project technician notes include:
 
-  * If available, be sure to import cleaned catalog data at the start of the process as it will make identification easier. If no cleaned catalog data is available (as was the case for us), track your progress using "check" in the confirmation column or "no" in the compared with catalog column. When catalog data is available, import it into the correct columns and start back at the top of the inventory data.
+- "Accession number listed in inventory spreadsheet prior to 2017 Arctos migration" (n=8974)
+- "Accession number matched to specimen during 2017 Arctos migration process" (n=2095)
+- "Unable to match to specific accession during 2017 Arctos migration process" (n=4237)
 
-  * Attempt to match up the unknown accession numbers using the donor, Arctos-ACCN, date and locality, and catalog information, if available. If a number can be identified with at least three pieces of information, enter it and mark "Done" in the confirmation column. If no catalog data is available, but two pieces of data match, enter it and mark "Check" in the confirmation column. If only two pieces of data match again, enter "No" in the confirmation column and flag the entry for later comparisons. If only the name matches, the ACCN will remain "?" and will have a "No" in the confirmation column.
-
-  * When the end of the donor column is reached, re-sort using the agency name and repeat the process.
-
-  * There may be inconsistencies between donors from different sources. Many of these will have already been flagged in Process 2. Try to identify the correct owner and accession number by comparing the dates and localities of each donor cluster. If the donor still cannot be identified, make a note in the remarks and flag the entry. Where appropriate, note whether multiple accessions are possible in the remarks column.
-
-## Creative Accessions and FIC Identification
-
-There may still be a significant number of entries that have no donor or agency listed, but do have an accession number, or information in the catalog books but not in the spreadsheet. All of this data can help identify FIC's and confirm the work already completed.
-
-  * First pull in all of the relevant donor and agency data from FIC entries, if you have not done so already. Information from inventory labels may be useful as well. Use a filter to find relevant names in that data column (see records from Nesper Pharmacy, from E.H. King).
-  * Next, pull in relevant data from the catalog books, including accession numbers (if not already confirmed or guessed at), donors, and dates.
-  * Sort the Excel sheet by Donor Name, then by ACCN-Sam and then by Higher Geography and Specific Locality.
-  * Identify inconsistencies in each cluster of accession numbers and correct or make notes accordingly.
-  * There may be some FICs which have no other data than a very very specific locality, and maybe a date and donor. In these cases, record the best possible guess for the record's accession number in the ACCN-Sam column, flag the record, and make a note in the remarks about how the accession number was determined.
-
-## Final Checks and Prepping Data for Reintegration into the Master Spreadsheet
-
-Finally, it is necessary to ensure as many unidentified entries as possible have information with them.
-
-  * Sort the Excel sheet by Donor one more time and try to match up any ?'s or FICs using the same criteria as Process 4
-  * Ensure every entry with ID information (ACCN number, donor name, agency) has been checked with the catalog data and has a confirmation value (Not Confirmed or Confirmed). There should be no entries that need to be "Checked" with the data.
-  * Ensure that all flagged entries have information in the remarks about why they were flagged. This is especially important for any FIC's which were identified, because there is no other way to follow the logic used to identify it.
-
-## Reintegrating Accession Matching data into the Master Spreadsheet
-
-Data from the process described above was re-integrated into the master malacology data by pulling in information based on the unique ID of each row. Data from the accession matching was reviewed a final time and then overwrote data in the master spreadsheet, and provenance is noted in column *remarks - accession*. These remarks were standardized. A "[?]" beginning the *remarks - accession* column indicates that this row was not evaulated during the accession matching process described above (likely because the record did not have enough data to even attempt to match). "[unconfirmed]" in the column *ACCN* indicates that an accession number was assigned but uncertainty remains. These should be further evaulation before migrating to Arctos.
+Many of the specimens in the malacology inventory data have very sparse collecting and receiving information, and we expected having a high percentage of specimens that we were unable to match to accession information. Of the 2095 specimen records with accession numbers matched via this process, 558 remain unconfirmed, but will still be migrated to Arctos under the unconfirmed accessions (with clear documentation of uncertainty). Accessions exist independantly from specimens in Arctos and we feel that making a connection, even where it is uncertain, will lead to better data accuracy than leaving our research hidden in remarks. If, at a later date, someone determines that an accession has been incorrectly applied to a specimen they can easily fix it in Arctos.
