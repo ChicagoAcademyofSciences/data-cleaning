@@ -10,7 +10,9 @@ All CHAS accession records are maintained in Arctos. These records originated fr
 
 ## Preparing the working spreadsheet (malacology)
 
-Malacology work was conducted by [@samuelhowes24](https://github.com/samuelhowes24) using partially-cleaned specimen inventory data from *Mala_Master_2017-03-03.csv*. We used partially-cleaned inventory data because our time was constrained and we needed to have multiple staff working simultaneously on different processes; however, in the future we would save this accession matching process to do AFTER the [original catalog book matching](original-catalog-book-matching.markdown), which added a significant amount of information to our inventory data.
+Malacology work was conducted by [@samuelhowes24](https://github.com/samuelhowes24) using partially-cleaned specimen inventory data from *Mala_Master_2017-03-03.csv*.
+
+> We used partially-cleaned inventory data because our time was constrained and we needed to have multiple staff working simultaneously on different processes; however, in the future we would save this accession matching process to do AFTER the [original catalog book matching](original-catalog-book-matching.markdown), which added a significant amount of information to our inventory data.
 
 *Mala_Master_2017-03-03.csv* was combined with Arctos accession records using OpenRefine wherever the inventory data had an existing accession number. This dataset was then formatted as [an Excel spreadsheet](../working-files/Mala_ACCNMatch_2017-05-23.xlsx) to facilitate efficient work. Several columns were added to track progress, new data, and possible issues with existing data. These columns were:
 

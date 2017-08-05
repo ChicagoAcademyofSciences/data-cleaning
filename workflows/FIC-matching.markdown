@@ -12,17 +12,31 @@ At least two matching fields were required to establish a possible FIC specimen 
 
 Our data is most easily processed when individuals and agencies are treated separately, so each got their own column. Similarly, sorting by locality is most effective when all data fields (specific locality, city, state, etc.) are standardized. Due to the number of records from the catalog books, this could not be done efficiently so sorting in this project was not as effective; nevertheless the locality sort was done to the best of the technician’s ability. A similar issue was present within the taxa, where multiple misspellings and old taxa made sorting less efficient. Sorts by taxa could still be done, but confirmation was needed throughout the process using MolluscaBase for identifying synonyms.
 
-Some of the records in the ACCN number column were input with text, most commonly “[unconfirmed]”. Formatting the entire column as text and then using a Find and Replace to eliminate the aforementioned string allowed for a more effective sort. Be sure to save a copy of the data before completing this step so that the ACCN column can be restored at the end of the project. 
+Some of the records in the ACCN number column were input with text, most commonly “[unconfirmed]”. Formatting the entire column as text and then using a Find and Replace to eliminate the aforementioned string allowed for a more effective sort. Be sure to save a copy of the data before completing this step so that the ACCN column can be restored at the end of the project.
 
 ## Eliminating unmatchable and non-malacology records
 
-Many of the records from the catalog books were not malacology records. These were marked off as “Not a malacology specimen” in the Collection Mgmt Notes column. In addition, many of the malacology records did not have enough data to be able to match at least two fields. These were marked off as “Not enough data to establish match” in the Collection Mgmt Notes column. 
+Many of the records from the catalog books were not malacology records. These were marked off as “Not a malacology specimen” in the Collection Mgmt Notes column. In addition, many of the malacology records did not have enough data to be able to match at least two fields. These were marked off as “Not enough data to establish match” in the Collection Mgmt Notes column.
 By sorting the sheet by genus and species and then flagging off the records which met these two criteria, the technician was able to set aside around 66% of the original data set and complete the first overview of data matching for the FICS. All subsequent matching rounds used this smaller set of data.
 
 ## Matching
 
-Taxa. After sorting the data by cleaned ACCN numbers and then by genus/species, the technician was able to match the majority of the project’s  matches by comparing and identifying duplicates, including within synonymized taxa. 
+Taxa. After sorting the data by cleaned ACCN numbers and then by genus/species, the technician was able to match the majority of the project’s  matches by comparing and identifying duplicates, including within synonymized taxa.
 
 Donor/agency: After sorting the data by donor, and then by genus/species, the technician confirmed most of the matches in step 4 and identified a few other ones which went overlooked. This step was repeated for the the Associated with Agency column.
 
 Locality: After sorting the data by specific locality the technician slowly worked through the data trying to find matches. The only ones found in this step were those from specific depths (e.g. 2200 ft, Foster Ave). Further searches after sorting by city or state did not yield any new results but did confirm previous matches.
+
+## *From catalog book matching section, to integrate*
+
+After reviewing and integrating data for specimens with catalog numbers, we now need to look at all of the records in the original catalog book spreadsheets that are supposedly related to malacology specimens but which did not have a matching number in the malacology inventory data.
+
+It is possible that the specimen recorded in the original catalog book data is an FIC (found in collection) and does not, therefore, have its catalog number present in the inventory data. Your job is to try and match up data between both sources with the goal of attaching catalog numbers to specimens that were previously FIC.
+
+More details will be provided on this process when you are ready to begin, but in short you will be looking to…
+
+-	See if any data in the catalog book matches FIC specimens in the inventory data. Sorting the malacology inventory spreadsheet by donor, taxon, or locality will help. To ensure the most effective sort, be sure to only use one or two fields at a time.
+
+-	Sorting by the “Received From/Presented By” and “COLLECTOR_1” columns helps with identifying FIC’s by name of donor. Be aware that the spreadsheet will sort on *exactly* what is written in the cell. “F.C. Baker” and “F. C. Baker” are considered two different entries.
+
+There will be cases where a positive ID cannot be made with a record, and that’s okay!
