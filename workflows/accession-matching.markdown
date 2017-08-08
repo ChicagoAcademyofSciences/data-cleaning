@@ -34,6 +34,8 @@ Entomology work is currently in progress.
 
 Specimen rows in the Excel spreadsheet with existing accession numbers had Arctos accession information pulled into the spreadsheet using OpenRefine. The accession data from Arctos was compared against the specimen data in Excel to confirm that the accession number listed during the inventory was correct.
 
+<div class="page-break"></div>
+
 ## Identifying new accession matches
 
 The Excel spreadsheet and OpenRefine dataset were used simultaneously to  identify matches between inventoried specimens (in Excel) and Arctos accessions (in OpenRefine). OpenRefine facilitated faceting while Excel allowed the project technician to use visual flags like color, and to enter single-cell data more quickly.
