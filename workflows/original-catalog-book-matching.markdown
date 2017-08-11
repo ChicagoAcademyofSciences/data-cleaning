@@ -1,6 +1,6 @@
-## Cross-Referencing Original Catalog Books
+# Cross-referencing Original Catalog Books
 
-*Instructions written for and followed by our NSF transcription intern.*
+*Instructions written for and followed by our NSF malacology transcription intern.*
 
 The goal of this process is to fill in our malacology and entomology inventory data with as much information from our catalog books as possible. CHAS has multiple catalog books that were used over the past 160 years to record the institution's specimen holdings. These books have been transcribed into Excel and are a useful source of information for specimens that may have lost or become disassociated from their labels. Your task is to cross-reference the transcribed catalog book records with our specimen inventory spreadsheets and add missing information, or look into any discrepancies between these sources.
 
