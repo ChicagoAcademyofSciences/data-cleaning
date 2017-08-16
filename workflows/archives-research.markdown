@@ -20,4 +20,4 @@ As the archive materials are mostly undigitized, it was necessary to go through 
 
 Once the initial flagging was complete, archive materials were assessed on an individual basis as the inventory data was being cleaned. For example, archive material related to Jose F. Quadras was examined in conjunction with cleaning up specimen data from the Philippines, where the bulk of his specimens originated. Likewise, archive material from Frank C. Baker helped to clear up details relating to specimens collected as part of his 1908 Natural History Survey.
 
-Not all archive materials were relevant to us at this time, however, the research completed as part of this process is summarized in [this document](../working-files/Archives Work Writeup_SHowes_2017_07_26.pdf) for future discovery and access.
+Not all archive materials were relevant to us at this time, however, the research completed as part of this process is summarized in [this document](../working-files/Archives-Work-Writeup_SHowes_2017_07_26.pdf) for future discovery and access.
