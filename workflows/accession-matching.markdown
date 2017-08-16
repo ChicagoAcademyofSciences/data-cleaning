@@ -6,9 +6,13 @@ The goal of this process is to associate inventoried malacology and entomology s
 
 All CHAS accession records are maintained in Arctos. These records originated from transcribed accession books, transcribed accession cards, and transcribed (where necessary) accession paperwork. Prior to beginning the accession matching process for the malacology and entomology collections, staff verified that all known accessions relevant to these collections were represented in Arctos.
 
-For the malacology collection, [@ekrimmel](https://github.com/ekrimmel) downloaded a subset of CHAS accessions from Arctos containing anything with "mala%" or "inv%" in the *Nature of Material* field. These were used as [an OpenRefine dataset](../working-files/Mala_ACCNArctos_2017-05-23.csv) for the purposes of this process.
+For the malacology collection, [@ekrimmel](https://github.com/ekrimmel) downloaded a subset of CHAS accessions from Arctos containing anything with "mala%" or "inv%" in the *Nature of Material* field. These were used as [an OpenRefine dataset](../working-files/Mala_ACCNArctos_2017-05-23.csv) where the project technician could track whether an accession had shown up in the inventory data or not by tagging accessions as either "done" or "done-not found in spreadsheet."
 
 For the entomology collection, [@ekrimmel](https://github.com/ekrimmel) downloaded a subset of CHAS accessions from Arctos containing anything with "ento%" or "inv%" in the *Nature of Material* field. These were used as an OpenRefine dataset for the purposes of this process.
+
+## Tracking progress against Arctos accession information
+
+[Arctos accession data in OpenRefine](../working-files/Mala_ACCNArctos_2017-05-23.csv) 
 
 ## Preparing the working spreadsheet (malacology)
 
@@ -36,8 +40,6 @@ Entomology work is currently in progress.
 
 Specimen rows with existing accession numbers had Arctos accession information pulled into the spreadsheet using OpenRefine. The accession data from Arctos was briefly compared against the specimen data in Excel to confirm that the accession number listed during the inventory was correct.
 
-<div class="page-break"></div>
-
 ## Identifying new accession matches
 
 The Excel spreadsheet and OpenRefine dataset were used simultaneously to  identify matches between inventoried specimens (in Excel) and Arctos accessions (in OpenRefine). OpenRefine facilitated faceting while Excel allowed the project technician to use visual flags like color, and to enter single-cell data more quickly.
@@ -60,10 +62,6 @@ Several issues were encountered, including:
   - In some cases, donor agents did not match between the Arctos accession record and the inventoried specimen data. These records were flagged and additional research done to confirm or otherwise explain. Where confirmation was impossible, the project technician left notes documenting his research and decision.
 
   - In cases where multiple accession numbers were applied to the same specimen these rows were flagged and researched further, with notes documenting any research and decision.
-
-## Tracking progress against Arctos accession information
-
-[Arctos accession data in OpenRefine](../working-files/Mala_ACCNArctos_2017-05-23.csv) was used to track whether or not an accession had shown up in the inventory data or not. The project technician indicated this by tagging accessions as either "done" or "done-not found in spreadsheet."
 
 ## Reintegrating accession matching data into master data (malacology)
 
