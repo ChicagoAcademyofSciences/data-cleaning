@@ -44,7 +44,7 @@ CHAS has inventoried, and in many cases digitized, the publications it produced 
 
 Biographical files have been created for a number of notable people asociated with CHAS, and where the person has published work the biography typically includes a bibliography. For the agents identified above, the project technician reviewed any existing CHAS biographical files.
 
-Where publications had images of type specimen, the images were compared with the specimens in CHAS collection to confirm the connection. When confirmed, a note was made in the *Type specimen notes* column of the master inventory data. Otherwise, the publication was only reviewed enough to assign a flag, and recorded in the bibliography spreadsheet for future cross-referencing.
+Where publications had images of type specimen, the images or catalog numbers were compared with the specimens in CHAS collection to confirm the connection. When confirmed, a note was made in the *Type specimen notes* column of the master inventory data. Otherwise, the publication was only reviewed enough to assign a flag, and recorded in the bibliography spreadsheet for future cross-referencing.
 
 ## Researching online sources
 
@@ -53,7 +53,7 @@ After researching CHAS internal publications, the project technician searched fo
 In addition to searching by the agent names on these online sources, the project technician also searched for publications using terms
 "Chicago Academy of Sciences" plus various species names.
 
-Where publications had images of type specimen, the images were compared with the specimens in CHAS collection to confirm the connection. When confirmed, a note was made in the *Type specimen notes* column of the master inventory data. Otherwise, the publication was only reviewed enough to assign a flag, and recorded in the bibliography spreadsheet for future cross-referencing.
+Where publications had images of type specimen, the images  or catalog numbers were compared with the specimens in CHAS collection to confirm the connection. When confirmed, a note was made in the *Type specimen notes* column of the master inventory data. Otherwise, the publication was only reviewed enough to assign a flag, and recorded in the bibliography spreadsheet for future cross-referencing.
 
 ## Integrating relevant content
 
