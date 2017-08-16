@@ -10,10 +10,6 @@ For the malacology collection, [@ekrimmel](https://github.com/ekrimmel) download
 
 For the entomology collection, [@ekrimmel](https://github.com/ekrimmel) downloaded a subset of CHAS accessions from Arctos containing anything with "ento%" or "inv%" in the *Nature of Material* field. These were used as an OpenRefine dataset for the purposes of this process.
 
-## Tracking progress against Arctos accession information
-
-[Arctos accession data in OpenRefine](../working-files/Mala_ACCNArctos_2017-05-23.csv) 
-
 ## Preparing the working spreadsheet (malacology)
 
 Malacology work was conducted by [@samuelhowes24](https://github.com/samuelhowes24) using partially-cleaned specimen inventory data from *Mala_Master_2017-03-03.csv*.
