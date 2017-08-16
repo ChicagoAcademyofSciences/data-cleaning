@@ -12,7 +12,7 @@ Archives research for our entomology collection is in progress.
 
 CHAS archives are in varying states of organization, and few have been digitized to any degree. While the manuscript collection is mostly processed, the institutional archives are much less so. When researching materials that were as yet unprocessed, the technician took just enough time to sort and organize materials relevant to this grant project. These materials will be fully processed and described at a later date.
 
-To stage potentially-relevant materials, the project technician pulled archives related to the agent names searched during the [bibliography workflow](bibliographic-references.workflow), focusing especially on people, institutions, and expeditions associated with numerous FIC or other low-data specimen records.
+To stage potentially-relevant materials, the project technician pulled archives related to the agent names searched during the [bibliography workflow](bibliographic-references.markdown), focusing especially on people, institutions, and expeditions associated with numerous FIC or other low-data specimen records.
 
 ## Identifying and integrating relevant content
 
