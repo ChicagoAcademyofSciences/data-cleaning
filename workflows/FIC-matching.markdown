@@ -8,7 +8,7 @@ FIC specimens in the CHAS collections may have become physically disassociated f
 
 [@ekrimmel](https://github.com/ekrimmel) created a dataset composed of all FIC specimen records and all unmatched catalog records. To get this set, data from the original catalog books was filtered by any row where the catalog number did not occur in the inventory specimen data and where the *Collection* was "malacology," "invertebrate," or null. This was then combined with all inventory data rows where the catalog number was "FIC," and formatted as an Excel spreadsheet. Rows representing a record from the original catalog books were colored white, and rows representing an inventoried specimen were blue, making it easy to visually distinguish matches between a white row and a blue row.
 
-> Our original catalog book data has not been cleaned and formatted in the same way we do for inventory specimen data. For the purposes of FIC matching, sorting would be more effective with more standardized data, however we decided the benefits of cleaning up the original catalog data did not outweigh the extra time required. OpenRefine could be a better tool to work with this less stanrdized dataset, but we decided that the visual cues (e.g. coloring rows based on provenance) in Excel were more helpful than the enhanced faceting and filtering functionality in OpenRefine.
+> Our original catalog book data has not been cleaned and formatted in the same way we do for inventory specimen data. For the purposes of FIC matching, sorting would be more effective with more standardized data, however we decided the benefits of cleaning up the original catalog data did not outweigh the extra time required. OpenRefine could be a better tool to work with this less standardized dataset, but we decided that the visual cues (e.g. coloring rows based on provenance) in Excel were more helpful than the enhanced faceting and filtering functionality in OpenRefine.
 
 Malacology FIC matching was conducted by [@samuelhowes24](https://github.com/samuelhowes24) using [this spreadsheet](../working-files/Mala_FICMatch_2017-07-05.xlsx).
 
@@ -22,7 +22,7 @@ By excluding rows marked as "not a malacology specimen" or "not enough data to e
 
 ## Establishing criteria for FIC matches (malacology)
 
-At least two fields in concordance were required to establish a possible FIC specimen to catalog record match, and three concordances were required to confirm it. The fields used to evaulate potential matches were those related to taxonomy, collector, collecting locality, collecting date, and donor/accession. Where two matches could be made and no other data conflicted, it was assumed that that specimen and record were a match, except in cases where multiple FIC specimens matched a single or multiple catalog records, making it impossible to determine which matches were correct.
+At least two fields in concordance were required to establish a possible FIC specimen to catalog record match, and three concordances were required to confirm it. The fields used to evaluate potential matches were those related to taxonomy, collector, collecting locality, collecting date, and donor/accession. Where two matches could be made and no other data conflicted, it was assumed that that specimen and record were a match, except in cases where multiple FIC specimens matched a single or multiple catalog records, making it impossible to determine which matches were correct.
 
 ## Identifying FIC matches (malacology)
 
@@ -30,7 +30,7 @@ By taxonomy... After sorting the data by cleaned ACCN numbers and then by genus/
 
 By collecting event information... After sorting the data by specific locality the technician slowly worked through the data trying to find matches. The only ones found in this step were those from specific depths (e.g. 2200 ft, Foster Ave). Further searches after sorting by city or state did not yield any new results but did confirm previous matches.
 
-By accession event information... After sorting the data by donor, and then by genus/species, the technician confirmed most of the matches in step 4 and identified a few other ones which went overlooked. This step was repeated for the the Associated with Agency column.
+By accession event information... After sorting the data by donor, and then by genus/species, the technician confirmed most of the matches in step 4 and identified a few other ones which went overlooked. This step was repeated for the Associated with Agency column.
 
 ## Reintegrating accession matching data into master data (malacology)
 
