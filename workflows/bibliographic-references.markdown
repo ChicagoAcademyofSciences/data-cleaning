@@ -9,7 +9,7 @@ Bibliographic references research for our entomology collection is in progress.
 
 ## Determining content focus
 
-In order to most effectively target publications with a high liklihood of providing useful information, it was necessary to identify agents (collectors, donors, institutions) related to CHAS collections who may have authored relevant publications. To determine who should be researched as a potential author, the project technician aggregated and reconciled agent names, then calculated their frequency in CHAS inventory data. He used a cutoff of agents referenced in at least 25 inventory data rows to limit the scope of this process to our given timeframe and staff capacity.
+In order to most effectively target publications with a high likelihood of providing useful information, it was necessary to identify agents (collectors, donors, institutions) related to CHAS collections who may have authored relevant publications. To determine who should be researched as a potential author, the project technician aggregated and reconciled agent names, then calculated their frequency in CHAS inventory data. He used a cutoff of agents referenced in at least 25 inventory data rows to limit the scope of this process to our given timeframe and staff capacity.
 
 ## Determining content sources
 
@@ -56,7 +56,7 @@ The spreadsheet also contained columns for flags (see table below), which were a
 | CRF-3	| Source is tangentially related to CHAS collection, may or may not have some useful information. Key only the author, the year, and any general subject info |
 | INV	| This source is transcribed and contains a large inventory or detailed list of specimens and can be immediately cross-referenced to the Malacology spreadsheet |
 | INV-1	| INV Source which has known information related to CHAS specimens. Keyword ONLY date range, collectors, and locality |
-| INV-2	| INV Source which possibly has information related to CHAS specimesn. Keyword ONLY date range, collectors, and KNOWN, SPECIFIC localities (city or below) |
+| INV-2	| INV Source which possibly has information related to CHAS specimens. Keyword ONLY date range, collectors, and KNOWN, SPECIFIC localities (city or below) |
 | ARCH	| This source is comprised of archival materials and should be combed for relevant data, see the [Archives workflow](archives-research.markdown) for more. |
 | ARCH (Ready) | This source is comprised of archival materials which have been flagged and are ready for integration with inventory data, see the [Archives workflow](archives-research.markdown) for more. |
 
