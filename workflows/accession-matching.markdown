@@ -6,9 +6,9 @@ The goal of this process is to associate inventoried malacology and entomology s
 
 All CHAS accession records are maintained in Arctos. These records originated from transcribed accession books, transcribed accession cards, and transcribed (where necessary) accession paperwork. Prior to beginning the accession matching process for the malacology and entomology collections, staff verified that all known accessions relevant to these collections were represented in Arctos.
 
-For the malacology collection, [@ekrimmel](https://github.com/ekrimmel) downloaded a subset of CHAS accessions from Arctos containing anything with "mala%" or "inv%" in the *Nature of Material* field. These were used as [an OpenRefine dataset]() for the purposes of this process.
+For the malacology collection, [@ekrimmel](https://github.com/ekrimmel) downloaded a subset of CHAS accessions from Arctos containing anything with "mala%" or "inv%" in the *Nature of Material* field. These were used as [an OpenRefine dataset](../working-files/Mala_ACCNArctos_2017-05-23.csv) for the purposes of this process.
 
-For the entomology collection, [@ekrimmel](https://github.com/ekrimmel) downloaded a subset of CHAS accessions from Arctos containing anything with "ento%" or "inv%" in the *Nature of Material* field. These were used as [an OpenRefine dataset]() for the purposes of this process.
+For the entomology collection, [@ekrimmel](https://github.com/ekrimmel) downloaded a subset of CHAS accessions from Arctos containing anything with "ento%" or "inv%" in the *Nature of Material* field. These were used as an OpenRefine dataset for the purposes of this process.
 
 ## Preparing the working spreadsheet (malacology)
 
@@ -63,7 +63,7 @@ Several issues were encountered, including:
 
 ## Tracking progress against Arctos accession information
 
-Arctos accession data in OpenRefine was used to track whether or not an accession had shown up in the inventory data or not. The project technician indicated this by tagging accessions as either "done" or "done-not found in spreadsheet."
+[Arctos accession data in OpenRefine](../working-files/Mala_ACCNArctos_2017-05-23.csv) was used to track whether or not an accession had shown up in the inventory data or not. The project technician indicated this by tagging accessions as either "done" or "done-not found in spreadsheet."
 
 ## Reintegrating accession matching data into master data (malacology)
 
