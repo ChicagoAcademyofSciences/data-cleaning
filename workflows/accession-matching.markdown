@@ -6,7 +6,9 @@ The goal of this process is to associate inventoried malacology and entomology s
 
 All CHAS accession records are maintained in Arctos. These records originated from transcribed accession books, transcribed accession cards, and transcribed (where necessary) accession paperwork. Prior to beginning the accession matching process for the malacology and entomology collections, staff verified that all known accessions relevant to these collections were represented in Arctos.
 
-[@ekrimmel](https://github.com/ekrimmel) then downloaded a subset of CHAS accessions from Arctos containing anything with "mala%" or "inv%" in the *Nature of Material* field. These were used as [an OpenRefine dataset]() for the purposes of this process.
+For the malacology collection, [@ekrimmel](https://github.com/ekrimmel) downloaded a subset of CHAS accessions from Arctos containing anything with "mala%" or "inv%" in the *Nature of Material* field. These were used as [an OpenRefine dataset]() for the purposes of this process.
+
+For the entomology collection, [@ekrimmel](https://github.com/ekrimmel) downloaded a subset of CHAS accessions from Arctos containing anything with "ento%" or "inv%" in the *Nature of Material* field. These were used as [an OpenRefine dataset]() for the purposes of this process.
 
 ## Preparing the working spreadsheet (malacology)
 
@@ -32,7 +34,7 @@ Entomology work is currently in progress.
 
 ## Confirming existing accession numbers
 
-Specimen rows in the Excel spreadsheet with existing accession numbers had Arctos accession information pulled into the spreadsheet using OpenRefine. The accession data from Arctos was compared against the specimen data in Excel to confirm that the accession number listed during the inventory was correct.
+Specimen rows with existing accession numbers had Arctos accession information pulled into the spreadsheet using OpenRefine. The accession data from Arctos was briefly compared against the specimen data in Excel to confirm that the accession number listed during the inventory was correct.
 
 <div class="page-break"></div>
 
@@ -73,7 +75,7 @@ The standardized data provenance categories are:
 - "Accession number matched to specimen during 2017 Arctos migration process" (n=2095)
 - "Unable to match to specific accession during 2017 Arctos migration process" (n=4237)
 
-Many of the specimens in the malacology inventory data have very sparse collecting and receiving information, and we expected having a high percentage of specimens that we were unable to match to accession information. Of the 2095 specimen records with accession numbers matched via this process, 558 remain unconfirmed, but will still be migrated to Arctos under the unconfirmed accessions (with clear documentation of uncertainty). Accessions exist independently from specimens in Arctos and we feel that making a connection, even where it is uncertain, will lead to better data accuracy than leaving our research hidden in remarks. If, at a later date, someone determines that an accession has been incorrectly applied to a specimen they can easily fix it in Arctos.
+Many of the specimens in the malacology inventory data have very sparse collecting and receiving information, and we expected having a high percentage of specimens that we were unable to match to accession information. Of the 2095 specimen records with accession numbers matched via this process, 558 remain unconfirmed, but will still be migrated to Arctos under the unconfirmed accessions (with clear documentation of uncertainty). Accessions exist independently from specimens in Arctos and we feel that making a connection, even where it is uncertain, will lead to better data accuracy than leaving our research hidden in remarks. If, at a later date, someone determines that an accession has been incorrectly applied to a specimen they can easily fix that in Arctos.
 
 ## Reintegrating accession matching data into master data (entomology)
 
