@@ -2,7 +2,7 @@
 
 *Instructions written and followed by our NSF entomology transcription intern.*
 
-Prior to 2016, CHAS non-Lepidopteran specimens were mixed up together and not physically arranged by taxonomy. This made verifying data and faciliftating research use very difficult. As part of the data verification process for this InvertEBase PEN grant, and in conjunction with ongoing volunteer work, the intern also physically re-organized entomology specimens.
+Prior to 2016, CHAS non-Lepidopteran specimens were mixed up together and not physically arranged by taxonomy. This made verifying data and facilitating research use very difficult. As part of the data verification process for this InvertEBase PEN grant, and in conjunction with ongoing volunteer work, the intern also physically re-organized entomology specimens.
 
 Work was done by insect order, and completed by the follow people:
 
