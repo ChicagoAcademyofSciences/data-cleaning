@@ -33,27 +33,27 @@ Work was done by insect order, and completed by the follow people:
 
 ## Physically aggregating specimens
 
-1.	Use the appropriate inventory spreadsheet (e.g. *Hymenoptera_[date].xlsx*) to find specimen locations. Create a list of all needed drawers and how many specimens there are in each drawer.
+1.	Use the appropriate inventory spreadsheet (e.g. *Hymenoptera_[date].xlsx*) to find specimen storage locations. Create a list of all needed Cornell drawers and how many specimens there are in each drawer.
 
-1.	Give each drawer its own background cell color in the spreadsheet to make finding specimens in the spreadsheet easier.
+1.	Give each drawer its own background cell color in the spreadsheet to make finding specimens in the data easier.
 
-1.	Bring down one drawer at a time and start to find and physically group specimens by taxonomy.
+1.	Bring down one drawer at a time to the entomology work station and start to find and physically group specimens by taxonomy.
 
 ## Verifying specimen inventory data
 
-1.	Make sure the data in the spreadsheet corresponds with the data on each specimen’s label.
+1.	Make sure the data in the inventory spreadsheet correspond with the data on each specimen’s label.
 
 1.	Briefly note the condition of the specimen in the spreadsheet.
 
-1.	Check to see if the listed taxonomic info is correct and still current, if not, update it.
+1.	Check to see if the listed taxonomic information is correct and still current, if not, update it.
 
 1.  Keep track of specimen rows that have been physically verified.
 
-1.	Once each physical specimen in the drawer has been verified, check the spreadsheet to make sure there are no digital entries for specimens that weren’t found in the drawer.
+1.	Once each physical specimen in the drawer has been verified, check the spreadsheet to make sure there are no digital records for specimens that weren’t found in the drawer.
 
-1.	If specimens were found in the drawer that weren’t listed in the inventory data as being in that drawer, search the entire spreadsheet for these specimens. If they are found elsewhere in the inventory data, change their storage location to correspond with the current drawer. If they are not found in the spreadsheet, create a new entry, entering all pertinent data from the specimen's labels.
+1.	If specimens were found in the drawer that weren’t listed in the inventory data as being in that drawer, search the entire spreadsheet for these specimens. If they are found elsewhere in the inventory data, update their storage location to correspond with the current drawer. If they are not found in the spreadsheet, create a new entry, transcribing all pertinent data from the specimen's label/s.
 
-1.	If specimens were listed in the inventory data as being in the current drawer but were not found, flag the row in the spreadsheet so they can be searched for in other drawers. If the missing specimens aren't found in any drawer, note that they are missing in the spreadsheet.
+1.	If specimens listed in the inventory data as being stored in the current drawer were not found, flag the row in the spreadsheet so the specimens can be searched for in other drawers. If the missing specimens aren't found in any drawer, note that they are missing in the spreadsheet.
 
 ## Labeling specimens
 
