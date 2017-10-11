@@ -1,6 +1,32 @@
 [
   {
     "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['CAT_NUM'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 CAT_NUM",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['CAT_NUM'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['OTHER_ID_NUM_1'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 OTHER_ID_NUM_1",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['OTHER_ID_NUM_1'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
     "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['ACCN'].value[0]",
     "engineConfig": {
       "mode": "row-based",
@@ -10,6 +36,305 @@
     "columnInsertIndex": 1,
     "baseColumnName": "COLLECTION_OBJECT_ID",
     "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['ACCN'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['Family (clean)'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 Family (clean)",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['Family (clean)'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['NEW FAMILY'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 NEW FAMILY",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['NEW FAMILY'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['Genus'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 Genus",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['Genus'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['Species'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 Species",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['Species'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['Infraspecific'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 Infraspecific",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['Infraspecific'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['Previous ID 1'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 Previous ID 1",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['Previous ID 1'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['Previous ID 2'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 Previous ID 2",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['Previous ID 2'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['GSW - Taxonomic'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 GSW - Taxonomic",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['GSW - Taxonomic'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['GSW- Other'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 GSW- Other",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['GSW- Other'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['GSW - !'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 GSW - !",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['GSW - !'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['GSW - Date'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 GSW - Date",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['GSW - Date'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['VERBATIM_DATE'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 VERBATIM_DATE",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['VERBATIM_DATE'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['BEGAN_DATE'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 BEGAN_DATE",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['BEGAN_DATE'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['ENDED_DATE'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 ENDED_DATE",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['ENDED_DATE'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['HIGHER_GEOG'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 HIGHER_GEOG",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['HIGHER_GEOG'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['SPEC_LOC'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 SPEC_LOC",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['SPEC_LOC'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['VERBATIM_LOCALITY'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 VERBATIM_LOCALITY",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['VERBATIM_LOCALITY'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['COLLECTOR_AGENT_1'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 COLLECTOR_AGENT_1",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['COLLECTOR_AGENT_1'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['REMARKS'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 REMARKS",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['REMARKS'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['PART_CONDITION_1'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 PART_CONDITION_1",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['PART_CONDITION_1'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['PART_LOC_1'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 PART_LOC_1",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['PART_LOC_1'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['Container Label'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 Container Label",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['Container Label'].value[0]",
+    "onError": "set-to-blank"
+  }
+  {
+    "op": "core/column-addition",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['PART_REMARK'].value[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "2017-09-19 PART_REMARK",
+    "columnInsertIndex": 1,
+    "baseColumnName": "COLLECTION_OBJECT_ID",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['PART_REMARK'].value[0]",
     "onError": "set-to-blank"
   }
   {
@@ -27,223 +352,28 @@
   }
   {
     "op": "core/column-addition",
-    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['Updated By'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
     },
-    "newColumnName": "2017-09-19 xxx",
+    "newColumnName": "2017-09-19 Updated By",
     "columnInsertIndex": 1,
     "baseColumnName": "COLLECTION_OBJECT_ID",
-    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['Updated By'].value[0]",
     "onError": "set-to-blank"
   }
   {
     "op": "core/column-addition",
-    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
+    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['Updated Date'].value[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": []
     },
-    "newColumnName": "2017-09-19 xxx",
+    "newColumnName": "2017-09-19 Updated Date",
     "columnInsertIndex": 1,
     "baseColumnName": "COLLECTION_OBJECT_ID",
-    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "onError": "set-to-blank"
-  }
-  {
-    "op": "core/column-addition",
-    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "engineConfig": {
-      "mode": "row-based",
-      "facets": []
-    },
-    "newColumnName": "2017-09-19 xxx",
-    "columnInsertIndex": 1,
-    "baseColumnName": "COLLECTION_OBJECT_ID",
-    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "onError": "set-to-blank"
-  }
-  {
-    "op": "core/column-addition",
-    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "engineConfig": {
-      "mode": "row-based",
-      "facets": []
-    },
-    "newColumnName": "2017-09-19 xxx",
-    "columnInsertIndex": 1,
-    "baseColumnName": "COLLECTION_OBJECT_ID",
-    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "onError": "set-to-blank"
-  }
-  {
-    "op": "core/column-addition",
-    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "engineConfig": {
-      "mode": "row-based",
-      "facets": []
-    },
-    "newColumnName": "2017-09-19 xxx",
-    "columnInsertIndex": 1,
-    "baseColumnName": "COLLECTION_OBJECT_ID",
-    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "onError": "set-to-blank"
-  }
-  {
-    "op": "core/column-addition",
-    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "engineConfig": {
-      "mode": "row-based",
-      "facets": []
-    },
-    "newColumnName": "2017-09-19 xxx",
-    "columnInsertIndex": 1,
-    "baseColumnName": "COLLECTION_OBJECT_ID",
-    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "onError": "set-to-blank"
-  }
-  {
-    "op": "core/column-addition",
-    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "engineConfig": {
-      "mode": "row-based",
-      "facets": []
-    },
-    "newColumnName": "2017-09-19 xxx",
-    "columnInsertIndex": 1,
-    "baseColumnName": "COLLECTION_OBJECT_ID",
-    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "onError": "set-to-blank"
-  }
-  {
-    "op": "core/column-addition",
-    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "engineConfig": {
-      "mode": "row-based",
-      "facets": []
-    },
-    "newColumnName": "2017-09-19 xxx",
-    "columnInsertIndex": 1,
-    "baseColumnName": "COLLECTION_OBJECT_ID",
-    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "onError": "set-to-blank"
-  }
-  {
-    "op": "core/column-addition",
-    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "engineConfig": {
-      "mode": "row-based",
-      "facets": []
-    },
-    "newColumnName": "2017-09-19 xxx",
-    "columnInsertIndex": 1,
-    "baseColumnName": "COLLECTION_OBJECT_ID",
-    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "onError": "set-to-blank"
-  }
-  {
-    "op": "core/column-addition",
-    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "engineConfig": {
-      "mode": "row-based",
-      "facets": []
-    },
-    "newColumnName": "2017-09-19 xxx",
-    "columnInsertIndex": 1,
-    "baseColumnName": "COLLECTION_OBJECT_ID",
-    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "onError": "set-to-blank"
-  }
-  {
-    "op": "core/column-addition",
-    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "engineConfig": {
-      "mode": "row-based",
-      "facets": []
-    },
-    "newColumnName": "2017-09-19 xxx",
-    "columnInsertIndex": 1,
-    "baseColumnName": "COLLECTION_OBJECT_ID",
-    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "onError": "set-to-blank"
-  }
-  {
-    "op": "core/column-addition",
-    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "engineConfig": {
-      "mode": "row-based",
-      "facets": []
-    },
-    "newColumnName": "2017-09-19 xxx",
-    "columnInsertIndex": 1,
-    "baseColumnName": "COLLECTION_OBJECT_ID",
-    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "onError": "set-to-blank"
-  }
-  {
-    "op": "core/column-addition",
-    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "engineConfig": {
-      "mode": "row-based",
-      "facets": []
-    },
-    "newColumnName": "2017-09-19 xxx",
-    "columnInsertIndex": 1,
-    "baseColumnName": "COLLECTION_OBJECT_ID",
-    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "onError": "set-to-blank"
-  }
-  {
-    "op": "core/column-addition",
-    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "engineConfig": {
-      "mode": "row-based",
-      "facets": []
-    },
-    "newColumnName": "2017-09-19 xxx",
-    "columnInsertIndex": 1,
-    "baseColumnName": "COLLECTION_OBJECT_ID",
-    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "onError": "set-to-blank"
-  }
-  {
-    "op": "core/column-addition",
-    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "engineConfig": {
-      "mode": "row-based",
-      "facets": []
-    },
-    "newColumnName": "2017-09-19 xxx",
-    "columnInsertIndex": 1,
-    "baseColumnName": "COLLECTION_OBJECT_ID",
-    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "onError": "set-to-blank"
-  }
-  {
-    "op": "core/column-addition",
-    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "engineConfig": {
-      "mode": "row-based",
-      "facets": []
-    },
-    "newColumnName": "2017-09-19 xxx",
-    "columnInsertIndex": 1,
-    "baseColumnName": "COLLECTION_OBJECT_ID",
-    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "onError": "set-to-blank"
-  }
-  {
-    "op": "core/column-addition",
-    "description": "Create column based on column COLLECTION_OBJECT_ID using expression grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
-    "engineConfig": {
-      "mode": "row-based",
-      "facets": []
-    },
-    "newColumnName": "2017-09-19 xxx",
-    "columnInsertIndex": 1,
-    "baseColumnName": "COLLECTION_OBJECT_ID",
-    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['xxx'].value[0]",
+    "expression": "grel:cell.cross('Botany_2017 09 19', 'COLLECTION_OBJECT_ID').cells['Updated Date'].value[0]",
     "onError": "set-to-blank"
   }
 ]
