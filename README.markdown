@@ -1,5 +1,5 @@
 # data-cleaning
-This repository contains documentation, scripts, and look-ups related to cleaning inventory specimen data in preparation to migrate to Arctos. The [data crosswalk]() and [data dictionary]() spreadsheets are two extremely helpful files to reference if you are trying to figure out how inventory data appears in Arctos, or as a guide to migrating future datasets.
+This repository contains documentation, scripts, and look-ups related to cleaning inventory specimen data in preparation to migrate to Arctos. The [data crosswalk](Arctos_DataCrosswalk.xlsx) and [data dictionary](Arctos_DataDictionary.xlsx) spreadsheets are two extremely helpful files to reference if you are trying to figure out how inventory data appears in Arctos, or as a guide to migrating future datasets.
 
 The [/backups](/backups) directory contains old copies of look-up files.
 
@@ -13,7 +13,7 @@ The [/taxon-authorities](/taxon-authorities) directory contains backups of the t
 
 The [/workflows](/workflows) directory contains descriptive workflows of processes done during the NSF InvertEBase PEN grant. THIS IS A VERY USEFUL PLACE FOR INFORMATION.
 
-The [/working files](/working files) directory contains an archive of assorted files that are referenced by workflows.
+The [/working-files](/working-files) directory contains an archive of assorted files that are referenced by workflows.
 
 [Issues for this repository](https://github.com/ChicagoAcademyofSciences/data-cleaning/issues) are a to-do list of what needs to be done related to data cleaning and migration into Arctos.
 
