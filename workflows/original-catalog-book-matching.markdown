@@ -24,15 +24,27 @@ Orient yourself to the spreadsheet. Columns with a blue background and a header 
 
 ## Preparing the working spreadsheet (entomology)
 
-Entomology work is currently in progress.
+You will be working in a spreadsheet specific to each subdiscipline of entomology, e.g. "Coleoptera" or "Non-Insect Arthropods." To prepare this spreadsheet we have done the following:
+
+1. Taken the most recent copy of the master inventory spreadsheet and cleared any extra characters from the values in column CAT_NUM (i.e. brackets and “FIC /”).
+
+1. Pulled in data from the most recent copy of each original catalog book spreadsheet (*[Original-Catalog-Book-00001-08000_2017-04-29](../working-files/Original-Catalog-Book-00001-08000_2017-04-29.csv)*, *[Original-Catalog-Book-08001-16000_2017-04-29](../working-files/Original-Catalog-Book-08001-16000_2017-04-29.csv)*, *[Original-Catalog-Book-16001-24000_2017-04-29](../working-files/Original-Catalog-Book-16001-24000_2017-04-29.csv)*, *[Original-Catalog-Book-24001-32000_2017-04-29](../working-files/Original-Catalog-Book-24001-32000_2017-04-29.csv)*). See script at [S:\Arctos\GitHub Repositories\data-cleaning\refine_CATMatch.json](../refine-scripts/refine_CATMatch.json).
+
+1. Reordered the columns so that each column with information from the original catalog books precedes its equivalent inventory data column.
+
+1. Flagged duplicate catalog numbers with “[duplicate]” after the number in the column CAT_NUM.
+
+On your computer, navigate to *L:\Inventory\Entomology\Spreadsheets\Original Catalog Book matching* and open up the appropriate spreadsheet for the subdiscipline you are working on. Save it as a new copy with an updated date before working so you can have a backup of your progress!
+
+Orient yourself to the spreadsheet. Columns with a blue background and a header beginning "CAT - " contain information from the original catalog books. Some columns in this spreadsheet are hidden. Leave them hidden so as to avoid accidentally editing data you should not be changing.
 
 ## Verifying a match between catalog book and inventory data
 
-The columns listed below contain information from the original catalog books. Our overall goal is to verify that this information matches and exists in the malacology inventory data columns, and where it does not, to add it. **Your goal, for now, is only to decide whether or not the information from the catalog book refers to the same specimen as the information from the inventory data.** You will do this by comparing information from the original catalog books (blue background) to information from the specimen inventory (white background). This is a vital step in our data unification process because our collection does have situations where re-numbering or duplicate catalogue numbers have occurred in the past.
+The columns listed below contain information from the original catalog books. Our overall goal is to verify that this information matches and exists in the inventory data columns, and where it does not, to add it. **Your goal, for now, is only to decide whether or not the information from the catalog book refers to the same specimen as the information from the inventory data.** You will do this by comparing information from the original catalog books (blue background) to information from the specimen inventory (white background). This is a vital step in our data unification process because our collection does have situations where re-numbering or duplicate catalogue numbers have occurred in the past.
 
 If the following column sets contain information that matches, we will assume that the two information sources (catalog book + inventory) refer to the same specimen. Indicate this by marking a “y” in the *Status* column.
 
--	**CAT – Collection:** Begin by sorting on this column and dealing with any rows that do not have the value “Malacology.” These rows may be related to the specimen in the malacology inventory data, but also could be related to a specimen with the same catalog number in a different collection. If the information from the original catalog books is not related to the specimen in the inventory data, mark the row “not a match” in the *Status* column. If the information does match, mark the row “y” in the *Status* and also change the value of *Cat – Collection* to “Malacology.” This is the only time you will ever edit the content of a blue cell, and the **only time you will edit the content of any cell during this stage** (other than in *Status*).
+-	**CAT – Collection:** Begin by sorting on this column and dealing with any rows that do not have the value “Malacology” (or "Entomology") These rows may be related to the specimen in the inventory data, but also could be related to a specimen with the same catalog number in a different collection. If the information from the original catalog books is not related to the specimen in the inventory data, mark the row “not a match” in the *Status* column. If the information does match, mark the row “y” in the *Status* and also change the value of *Cat – Collection* to "Malacology" (or "Entomology") This is the only time you will ever edit the content of a blue cell, and the **only time you will edit the content of any cell during this stage** (other than in *Status*).
 
  > Pay special attention to duplicate catalog numbers! Our script will have pulled in information from the catalog book that does not match at least one of any set of duplicate catalog numbers. You need to determine which catalog number in the malacology data is also referred to by the catalog book data.
 

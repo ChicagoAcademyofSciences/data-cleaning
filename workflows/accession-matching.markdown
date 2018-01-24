@@ -28,15 +28,11 @@ Malacology work was conducted by [@samuelhowes24](https://github.com/samuelhowes
 
   - A remarks column, for catching any extra data or pertinent observations made by the project technician.
 
-## Preparing the working spreadsheet (entomology)
-
-Entomology work is currently in progress.
-
-## Confirming existing accession numbers
+## Confirming existing accession numbers (malacology)
 
 Specimen rows with existing accession numbers had Arctos accession information pulled into the spreadsheet using OpenRefine. The accession data from Arctos was briefly compared against the specimen data in Excel to confirm that the accession number listed during the inventory was correct.
 
-## Identifying new accession matches
+## Identifying new accession matches (malacology)
 
 The Excel spreadsheet and OpenRefine dataset were used simultaneously to  identify matches between inventoried specimens (in Excel) and Arctos accessions (in OpenRefine). OpenRefine facilitated faceting while Excel allowed the project technician to use visual flags like color, and to enter single-cell data more quickly.
 
@@ -61,7 +57,7 @@ Several issues were encountered, including:
 
 ## Reintegrating accession matching data into master data (malacology)
 
-Data from the process above was reintegrated into the master malacology data by pulling in relevant spreadsheet columns (*ACCN-Sam*, *ACCN confirmed?*, *Flags - unable to confirm*, and *Remarks*) based on the unique ID of each row. The new data was reviewed a final time before it overwrote data in the master, with data provenance and project technician notes standardized and recorded in the accession remarks.
+Data from the process above was reintegrated into the master malacology data by pulling in relevant spreadsheet columns (*ACCN-Sam*, *ACCN confirmed?*, *Flags - unable to confirm*, and *Remarks*) based on the unique ID of each row. The new data was reviewed a final time before it overwrote data in the master, with data provenance and project technician notes standardized and recorded in the catalog record remarks.
 
 The standardized data provenance categories are:
 
@@ -71,6 +67,6 @@ The standardized data provenance categories are:
 
 Many of the specimens in the malacology inventory data have very sparse collecting and receiving information, and we expected having a high percentage of specimens that we were unable to match to accession information. Of the 2095 specimen records with accession numbers matched via this process, 558 remain unconfirmed, but will still be migrated to Arctos under the unconfirmed accessions (with clear documentation of uncertainty). Accessions exist independently from specimens in Arctos and we feel that making a connection, even where it is uncertain, will lead to better data accuracy than leaving our research hidden in remarks. If, at a later date, someone determines that an accession has been incorrectly applied to a specimen they can easily fix that in Arctos.
 
-## Reintegrating accession matching data into master data (entomology)
+## Accession matching process for entomology datasets
 
-Entomology work is currently in progress.
+Entomology was treated differently from malacology because the data had significantly less identifying information, and the liklihood of being able to match specimens to exact accession records was low. Instead, each entomology subdiscipline was evaluated for accession matches based on collector/donor and date, where known.

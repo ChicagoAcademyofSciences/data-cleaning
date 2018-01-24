@@ -2,18 +2,16 @@
 
 *Instructions written and followed by our NSF entomology transcription intern.*
 
-Prior to 2016, CHAS non-Lepidopteran specimens were mixed up together and not physically arranged by taxonomy. This made verifying data and facilitating research use very difficult. As part of the data verification process for this InvertEBase PEN grant, and in conjunction with ongoing volunteer work, the intern also physically re-organized entomology specimens.
+Prior to 2016, CHAS non-Lepidopteran specimens were mixed up together and not physically arranged by taxonomy. This made verifying data and facilitating research use very difficult. As part of the data verification process for this InvertEBase PEN grant, and in conjunction with ongoing volunteer work, the intern also physically re-organized entomology specimens. The steps described here are slightly different for Coleoptera, as this order is being physically reorganized post-migration into Arctos.
 
 Work was done by insect order, and completed by the follow people:
 
 - **Blattodea** (n=27) - *Michael Portala* (as an intern sponsored by Loyola University)
 
-> **Coleoptera** (n=17566), IN PROGRESS - *TBD NSF intern #3*
+> **Coleoptera** (n=17566), IN PROGRESS - *Michael Portala* (as an intern sponsored by this NSF InvertEBase PEN grant)
 
 - **Dermaptera** (n=6) - *Michael Portala* (as an intern sponsored by Loyola University)
-
-> **Diptera** (n=3054), IN PROGRESS - *Micah Saugen* (as an intern sponsored by Loyola University)
-
+- **Diptera** (n=3054) - *Micah Saugen* and *Sam Urben* (as interns sponsored by Loyola University)
 - **Ephemeroptera** (n=5) - *Michael Portala* (as an intern sponsored by Loyola University)
 - **Hemiptera** (n=1156) - *Michael Portala* (as an intern sponsored by Loyola University) & *Michelle Hauer* (as a volunteer)
 - **Hymenoptera** (n=1311) - *Michael Portala* (as an intern sponsored by this NSF InvertEBase PEN grant)
@@ -63,7 +61,7 @@ Work was done by insect order, and completed by the follow people:
 
 ## Physically reorganizing specimens by taxonomic group
 
-1.	Once all specimens are labeled and accounted for, organize them by family, grouping the most related specimens with each other.
+1.	Once all specimens are labeled and accounted for, organize them by family, grouping the most related specimens with each other. Some of this physical reorganization can be done as new labels are applied to minimize specimen handling.
 
 1.  Ensure that specimens are spaced apart sufficiently, and that each drawer has space for growth in the collection.
 

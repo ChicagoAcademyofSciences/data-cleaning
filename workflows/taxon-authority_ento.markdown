@@ -28,46 +28,17 @@ Robin Delapena (Collections Assistant at FMNH) downloaded unique names by taxono
 
 **First Pass**
 
-| Priority | Group | Source	| # names matched | % total matched |
-| :---: | --- | --- | ---: | ---: |
-| 1	| Blattodea | [Nearctic_Blattodea_Taxa_fmnh.csv](../taxon-authorities/merged-Nearctic_Blattodea_Taxa_fmnh.xlxs)	| 5	| % |
-| 1	| Coleoptera | [Nearctic_Coleoptera_Taxa_fmnh.csv](../taxon-authorities/merged-Nearctic_Coleoptera_Taxa_fmnh.xlxs)	| 545 | % |
-| 1	| Ephemeroptera | [Mayfly Central: The Mayflies of North America](https://www.entm.purdue.edu/mayfly/na-species-list.php) | 1	| % |
-| 1	| Hymenoptera | [Nearctic_Hymenoptera_Taxa_fmnh.csv](../taxon-authorities/merged-Nearctic_Hymenoptera_Taxa_fmnh.xlxs)	| 108	| % |
-| 1	| Hemiptera | [All_Regions_Hemiptera_Taxa_fmnh.csv](../taxon-authorities/merged-All_Regions_Hemiptera_Taxa_fmnh.xlxs)	| 106	| % |
-| 1	| Mantodea | [Nearctic_Mantodea_Taxa_fmnh.csv](../taxon-authorities/merged-Nearctic_Mantodea_Taxa_fmnh.xlxs)	| 3 | % |
-| 1	| Odonata |  [Nearctic_Odonata_Taxa_fmnh.csv](../taxon-authorities/merged-Nearctic_Odonata_Taxa_fmnh.xlxs)	| 38	| % |
-| 2	| *all Insecta* | [ITIS](https://www.itis.gov) | 	1858	| % |
-| 2	| *all Insecta* | [Catalog of Life](http://www.catalogueoflife.org)	| 127	| % |
-| 3	| *all Insecta* | [Global Names](http://globalnames.org)	| 1072	| % |
-| 	| *all Insecta* | UNMATCHED NAMES	| 1753	| % |
+| Group | Source	| # names matched | % total matched |
+| --- | --- | ---: | ---: |
+| Blattodea | [Nearctic_Blattodea_Taxa_fmnh.csv](../taxon-authorities/merged-Nearctic_Blattodea_Taxa_fmnh.xlxs)	| 5	| 38% |
+| Coleoptera | [Nearctic_Coleoptera_Taxa_fmnh.csv](../taxon-authorities/merged-Nearctic_Coleoptera_Taxa_fmnh.xlxs)	| 545 | 13% |
+| Ephemeroptera | [Mayfly Central: The Mayflies of North America](https://www.entm.purdue.edu/mayfly/na-species-list.php) | 1	| 33% |
+| Hymenoptera | [Nearctic_Hymenoptera_Taxa_fmnh.csv](../taxon-authorities/merged-Nearctic_Hymenoptera_Taxa_fmnh.xlxs)	| 108	| 54% |
+| Hemiptera | [All_Regions_Hemiptera_Taxa_fmnh.csv](../taxon-authorities/merged-All_Regions_Hemiptera_Taxa_fmnh.xlxs)	| 106	| 32% |
+| Mantodea | [Nearctic_Mantodea_Taxa_fmnh.csv](../taxon-authorities/merged-Nearctic_Mantodea_Taxa_fmnh.xlxs)	| 3 | 38% |
+| Odonata |  [Nearctic_Odonata_Taxa_fmnh.csv](../taxon-authorities/merged-Nearctic_Odonata_Taxa_fmnh.xlxs)	| 38	| 73% |
 
-** By Order
-
-| Priority | Group | # verified	| # unverified | Status |
-| :---: | --- | --- | ---: | ---: |
-| 	| Blattodea | 13 | 5 | pending |
-| 	| Coleoptera | 4201 | 2361 | pending |
-| 	| Dermaptera | 5 | 0	| complete |
-| 	| Diptera | 652	| 404 | pending |
-| 	| Ephemeroptera | 3 | 0 | complete |
-| 	| Hemiptera | 332 | 165	| pending |
-| 	| Hymenoptera | 200 | 77 | pending |
-| 	| Isoptera | 2 | 0 | complete |
-| 	| Mantodea | 8 | 3 | pending |
-| 	| Mecoptera | 3 | 0	| complete |
-| 	| Megaloptera | 5 | 0	| complete |
-| 	| Neuroptera | 10 | 0	| complete |
-| 	| Odonata | 52 	| 1	| pending |
-| 	| Orthoptera | 118 | 22	| pending |
-| 	| Phasmida | 5	| 0	| complete |
-| 	| Plecoptera | 9 | 5	| pending |
-| 	| Raphidoptera | 1	| 0	| complete |
-| 	| Trichoptera | 12	| 1	| pending |
-
-*Total found between ITIS, CoL, and Global Names was 3709 (1907 not found).*
-
-*Next steps: cross-reference with SCAN. Identify taxonomic groups in need of expert opinion.*
+This first pass using taxonomic data from FMNH was not able to resolve the majority of CHAS  names. A second pass using the [GBIF species lookup tool](https://www.gbif.org/tools/species-lookup) helped us resolve the entirety of CHAS Insecta names, although probably at a lower taxonomic quality than those synonimized from FMNH data.
 
 ### Other arthropods (n=13)
 
@@ -80,7 +51,7 @@ We were able to validate and synonymize 100% of these names via the methods abov
 
 ## Step 3, Using the taxon authority to clean specimen data
 
-Each entomology inventory dataset was compared against the taxon authority using OpenRefine to match original names to their current, valid counterpart. All names from the taxon authorities have also been validated against Arctos and added as necessary.
+Each entomology inventory dataset was compared against the taxon authority using OpenRefine to match original names to their current, valid counterpart whenever possible. However, a significant number of entomology specimens could not be matched to current, valid taxonomy without expert review. All names from the taxon authorities have also been validated against Arctos and added as necessary.
 
 ###  Steps taken for each entomology inventory dataset:
 
@@ -90,4 +61,4 @@ Each entomology inventory dataset was compared against the taxon authority using
 
   3. *ACCEPTED TAXON* matches to valid Arctos taxonomy.
 
-  4. Retain original taxonomy on catalog record as a record of the verbatim identification.
+  4. Retain original identification on catalog record using [Arctos' tools for recognizing complex taxonomic determinations](http://handbook.arctosdb.org/documentation/identification.html), e.g. a valid genus but a specific epiphet that never existed.

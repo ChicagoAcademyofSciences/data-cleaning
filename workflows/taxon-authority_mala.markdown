@@ -10,31 +10,14 @@ CHAS malacology specimens were inventoried in separate Excel spreadsheets by tax
 
 ## Step 2, Synonymizing with valid taxonomy
 
-### group (n=5125)
+### Mollusca, Porifera, Cnidaria, etc. (n=5125)
 
-Janeen Jones (FMNH) downloaded unique names by taxonomic order from FMNH's malacology collections in EMu. For mollusks (unlike insects) FMNH does store old taxonomic synonyms, which made this species list much more useful than what we were able to obtain for entomology. [@ekrimmel](https://github.com/ekrimmel) validated CHAS names against this data from FMNH, with the results shown in the table below.
+Janeen Jones (Assistant Collections Manager at FMNH) downloaded unique names by taxonomic order from FMNH's malacology collections in EMu. For mollusks (unlike insects) FMNH does store old taxonomic synonyms, which made this species list much more useful than what we were able to obtain for entomology. In addition, many of these names have been evaluated with recent expertise by Jochen Gerber (Collections Manager at FMNH).
 
-FMNH has a very large number of taxonomic names for North American terrestrial and freshwater mollusks already in its EMu database, and a lot of these names have been evaluated with recent expertise (Jochen). FMNH North American land snails and fresh water bivalve taxa. Molluscan names do include synonyms.
-
-EK researched abbreviated genus names within the context of this dataset. EK matched against MolluscaBase. For any ambiguous names, EK selected one option but it may not be the correct option! These names need to be revisited by someone who can better determine, but at the very least it links our specimen to a valid taxon.
-
-Matched these names against WoRMS, ITIS, Global Names, and Catalog of Life via Lifewatch Regional Portal’s taxonomic name resolution services. We were able to validate or synonymize slightly more than 50% of the names in our data, but that still leaves us with approx. 2400 unvalidated taxa, probably mostly outdated synonyms.
-
-| Priority	| Group | Source	| # names matched | % total matched |
-| :---: | --- | --- | ---: | ---: |
-| 3 | --- | [FMNH North American mollusks](NAMolluscTaxa.csv) | --- | --- |
-| 2 | --- | [WoRMS]() | --- | --- |
-| 1 | --- | [MolluscaBase]() | LifeWatch | --- |
-| 4 | --- | [ITIS]() | LifeWatch | --- |
-| 5 | --- | [GlobalNames]() | LifeWatch | --- |
-| 4 | --- | [Catalog of Life]() | LifeWatch | --- |
-
-Exclude non-NA specimens, focus on freshwater and land species.
-
-Petra's columns: geography to exclude certain specimens? Color code by habitat type? Match by genus to MolluscaBase
+[@ekrimmel](https://github.com/ekrimmel) was able to validate approximately 50% of CHAS names against the data from FMNH. Any names that could not be validated against the FMNH dataset were validated using [WoRMS](http://www.marinespecies.org) (first priority), or [GBIF](https://www.gbif.org/tools/species-lookup) (second priority). Any names that were still unvalidated after trying FMNH, WoRMS, and GBIF were researched and validated individually by one of our NSF interns, Yvi Russell.
 
 * * *
 
 ## Step 3, Using the taxon authority to clean specimen data
 
-The malacology inventory dataset can be compared against the taxon authority using Open Refine to match original names to their current, valid counterpart. All names from the taxon authorities have also been validated against Arctos and added as necessary.
+The malacology inventory dataset was compared against the taxon authority using OpenRefine to match original names to their current, valid counterpart whenever possible. All names from the taxon authorities have also been validated against Arctos and added as necessary. Original identifications were retained on catalog records using [Arctos' tools for recognizing complex taxonomic determinations](http://handbook.arctosdb.org/documentation/identification.html), e.g. a valid genus but a specific epiphet that never existed.

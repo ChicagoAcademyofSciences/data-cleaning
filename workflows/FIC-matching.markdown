@@ -2,7 +2,7 @@
 
 The goal of this process was to match found-in-collection (FIC) specimen records to their disassociated CHAS catalog numbers by cross-referencing data between inventory spreadsheets, catalog records, accession records, and ancillary information from archives and publications.
 
-FIC specimens in the CHAS collections may have become physically disassociated from their catalog numbers in a variety of ways, including being on exhibit or on loan. The malacology collection was hastily moved to a new storage facility in the early 1990s, and when the collection was inventoried in 2008-2009 some specimens were jumbled together in drawers with labels loose. Many specimens were re-associated with their labels during the inventory period, but prior to the process described here 29% of the collection (4,483 specimen lots) lacked a catalog number.
+FIC specimens in the CHAS collections may have become physically disassociated from their catalog numbers in a variety of ways, including being on exhibit or on loan. The malacology collection was hastily moved to a new storage facility in the early 1990s, and when the collection was inventoried in 2008-2009 some specimens were jumbled together in drawers with labels loose. Many specimens were re-associated with their labels during the inventory period, but prior to the process described here 29% of the malacology collection (4,483 specimen lots) and 77% of the non-Lepidopteran entomology collection (18,932 specimen lots) lacked a catalog number.
 
 ## Preparing the working spreadsheet (malacology)
 
@@ -14,7 +14,7 @@ Malacology FIC matching was conducted by [@samuelhowes24](https://github.com/sam
 
 ## Preparing the working spreadsheet (entomology)
 
-Entomology work is currently in progress.
+Entomology work was conducted as described above for malacology, but separately for each entomology subdiscipline, e.g. "Coleoptera" or "Non-Insect Arthropods."
 
 ## Eliminating unmatchable and irrelevant records (malacology)
 
@@ -26,7 +26,7 @@ By excluding rows marked as "not a malacology specimen" or "not enough data to e
 
 ## Eliminating unmatchable and irrelevant records (entomology)
 
-Entomology work is currently in progress.
+Entomology work was conducted as described above for malacology, but separately for each entomology subdiscipline, e.g. "Coleoptera" or "Non-Insect Arthropods."
 
 ## Establishing criteria for FIC matches
 
@@ -43,8 +43,8 @@ At least two fields in concordance were required to establish a possible FIC spe
 
 ## Reintegrating FIC matching data into master data (malacology)
 
-Data from the process above was reintegrated into the master malacology data by pulling in relevant spreadsheet columns (*Catalog Number*, *Collection Mgmt Notes*) based on the unique ID of each row. The new data was reviewed a final time before it overwrote data in the master, with data provenance and standardized project technician notes ("FIC matched to catalog number during Arctos migration process, 2017") recorded in the remarks. This process resulted in 45 matches, i.e. 45 previously FIC specimens that now are reunited with their catalog numbers and associated information.
+Data from the process above was reintegrated into the master malacology data by pulling in relevant spreadsheet columns (*Catalog Number*, *Collection Mgmt Notes*) based on the unique ID of each row. The new data was reviewed a final time before it overwrote data in the master, with data provenance and standardized project technician notes ("FIC matched to catalog number during Arctos migration process, 2017") recorded in the remarks. This process **resulted in 43 matches**, i.e. 43 previously FIC specimens that now are reunited with their catalog numbers and associated information.
 
 ## Reintegrating FIC matching data into master data (entomology)
 
-Entomology work is currently in progress.
+Data from the process above was reintegrated into the master entomology data by pulling in relevant spreadsheet columns (*Catalog Number*, *Collection Mgmt Notes*) based on the unique ID of each row. The new data was reviewed a final time before it overwrote data in the master, with data provenance and standardized project technician notes ("FIC matched to catalog number during Arctos migration process, 2017") recorded in the remarks. This process **resulted in 44 matches**, i.e. 44 previously FIC specimens that now are reunited with their catalog numbers and associated information. All successful catalog number matches were Coleoptera specimens.
