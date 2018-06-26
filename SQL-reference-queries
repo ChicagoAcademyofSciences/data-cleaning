@@ -1,0 +1,36 @@
+#Cleaning up no date records with birth/death dates and accession receipt dates
+
+SELECT collection.institution_acronym, cataloged_item.collection_cde, cataloged_item.cat_num, accn.accn_number, accn.received_date, collecting_event.began_date, collecting_event.ended_date, identification.scientific_name, identification.accepted_id_fg, agent_status.agent_status, agent_status.status_date
+
+FROM cataloged_item
+
+JOIN specimen_event ON cataloged_item.collection_object_id = specimen_event.collection_object_id
+JOIN collecting_event ON specimen_event.collecting_event_id = collecting_event.collecting_event_id
+JOIN accn ON cataloged_item.accn_id = accn.transaction_id
+JOIN collection ON cataloged_item.collection_id = collection.collection_id
+
+JOIN identification ON cataloged_item.collection_object_id = identification.collection_object_id
+
+
+JOIN collector ON cataloged_item.collection_object_id = collector.collection_object_id
+JOIN agent ON collector.agent_ID = agent.agent_id
+JOIN agent_status ON agent.agent_id = agent_status.agent_id
+
+WHERE collection.institution_acronym = 'CHAS'
+AND agent_status.agent_status NOT LIKE 'alive'
+AND collector.collector_role = 'collector'
+AND identification.accepted_id_fg = 1
+AND collecting_event.began_date = '1800'
+AND accn.accn_number NOT LIKE 'accession unknown'
+AND accn.accn_number NOT LIKE '2015.13'
+AND accn.accn_number NOT LIKE '2016.5'
+AND accn.accn_number NOT LIKE '2016.2'
+AND accn.accn_number NOT LIKE '2016.6'
+AND accn.accn_number NOT LIKE '2017.10'
+AND accn.accn_number NOT LIKE '2017.13'
+AND accn.accn_number NOT LIKE '2017.14'
+AND accn.accn_number NOT LIKE '2017.15'
+AND accn.accn_number NOT LIKE '2017.2'
+AND accn.accn_number NOT LIKE '2017.3'
+AND accn.accn_number NOT LIKE '2017.5'
+AND accn.accn_number NOT LIKE '2018.2'
