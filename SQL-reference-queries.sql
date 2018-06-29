@@ -1,4 +1,4 @@
-#Cleaning up no date records with birth/death dates and accession receipt dates
+--Cleaning up no date records with birth/death dates and accession receipt dates
 
 SELECT collection.institution_acronym, cataloged_item.collection_cde, cataloged_item.cat_num, accn.accn_number, accn.received_date, collecting_event.began_date, collecting_event.ended_date, identification.scientific_name, identification.accepted_id_fg, agent_status.agent_status, agent_status.status_date
 
@@ -35,49 +35,38 @@ AND accn.accn_number NOT LIKE '2017.3'
 AND accn.accn_number NOT LIKE '2017.5'
 AND accn.accn_number NOT LIKE '2018.2'
 
-#Matching accessions contents
-SELECT DISTINCT accn_number, agent_ID, count(agent_ID) AS agt_cnt
-FROM (SELECT accn.accn_number, collector.agent_ID
+-- Matching accessions contents
+-- The following returns a list of collectors within an accn and enumerates the number of specimens they collected in this accn
+SELECT accn_agt.institution_acronym, accn_agt.accn_number, accn_agt.preferred_agent_name, count(accn_agt.agent_ID) AS agt_cnt
 
+FROM
+  (SELECT accn.accn_number, accn.transaction_id, collector.agent_id, agent.preferred_agent_name, collection.institution_acronym, left(collecting_event.began_date,4), left(collecting_event.ended_date,4)
+
+  FROM accn
+
+  JOIN cataloged_item ON accn.transaction_id = cataloged_item.accn_id
+  JOIN collector ON cataloged_item.collection_object_id = collector.collection_object_id
+  JOIN agent ON collector.agent_id = agent.agent_id
+  JOIN trans ON accn.transaction_id = trans.transaction_id
+  JOIN collection ON trans.collection_id = collection.collection_id
+  JOIN specimen_event ON cataloged_item.collection_object_id = specimen_event.collection_object_id
+  JOIN collecting_event ON specimen_event.collecting_event_id = collecting_event.collecting_event_id
+
+  WHERE accn.accn_number NOT LIKE 0
+
+  ORDER BY accn.transaction_id, collector.agent_id) accn_agt
+
+WHERE accn_agt.institution_acronym = 'CHAS'
+
+GROUP BY accn_agt.institution_acronym, accn_agt.accn_number, accn_agt.preferred_agent_name
+ORDER BY accn_agt.accn_number, agt_cnt DESC
+
+
+
+--Returns accns with specimens contained within as well as the nature of material
+
+SELECT accn.estimated_count, accn.accn_number, (SELECT COUNT(*) FROM cataloged_item WHERE cataloged_item.accn_ID = accn.transaction_ID) AS cnt_spec, trans.nature_of_material
 FROM accn
+JOIN trans ON accn.transaction_ID = trans.transaction_ID
 
-JOIN cataloged_item ON accn.transaction_ID = cataloged_item.accn_ID
-JOIN collector ON cataloged_item.collection_object_id = collector.collection_object_id
-
-WHERE accn.accn_number NOT LIKE 0)
-
-GROUP BY accn_number, agent_ID
-
-
-
-SELECT accn.accn_number, collector.agent_ID, COUNT(*) as feq_coll
-
-FROM accn, cataloged_item, collector
-
-JOIN cataloged_item ON accn.transaction_ID = cataloged_item.accn_ID
-JOIN collector ON cataloged_item.collection_object_id = ollector.collection_object_id
-
-GROUP BY accn.transaction_ID, collector.agent_ID
-
-WHERE cataloged_item.accn_ID = accn.transaction_ID AND
-cataloged_item.collection_object_id = collector.collection_object_id AND
-accn.accn_number NOT LIKE 0
-
-ORDER BY accn.transaction_ID, collector.agent_ID
-
-
-
-SELECT DISTINCT on (user_id) user_id, most_frequent_value
-FROM (SELECT user_id, data1 AS most_frequent_value, count(*) as _count
-FROM my_table
-GROUP BY user_id, data1) a
-ORDER BY user_id, _count DESC
-
-
-Returns accns with specimens contained within
-
-SELECT accn.estimated_count, accn.accn_number, (SELECT COUNT(*) FROM cataloged_item WHERE cataloged_item.accn_ID = accn.transaction_ID) as cnt_spec, trans.nature_of_material
-FROM accn
-JOIN trans on accn.transaction_ID = trans.transaction_ID
-
-ORDER by cnt_spec DESC
+ORDER BY cnt_spec DESC
