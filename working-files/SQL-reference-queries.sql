@@ -40,7 +40,7 @@ AND accn.accn_number NOT LIKE '2018.2'
 SELECT accn_agt.institution_acronym, accn_agt.accn_number, accn_agt.preferred_agent_name, count(accn_agt.agent_ID) AS agt_cnt
 
 FROM
-  (SELECT accn.accn_number, accn.transaction_id, collector.agent_id, agent.preferred_agent_name, collection.institution_acronym, left(collecting_event.began_date,4), left(collecting_event.ended_date,4)
+  (SELECT accn.accn_number, accn.transaction_id, collector.agent_id, agent.preferred_agent_name, collection.institution_acronym
 
   FROM accn
 
@@ -61,12 +61,18 @@ WHERE accn_agt.institution_acronym = 'CHAS'
 GROUP BY accn_agt.institution_acronym, accn_agt.accn_number, accn_agt.preferred_agent_name
 ORDER BY accn_agt.accn_number, agt_cnt DESC
 
-
-
 --Returns accns with specimens contained within as well as the nature of material
 
-SELECT accn.estimated_count, accn.accn_number, (SELECT COUNT(*) FROM cataloged_item WHERE cataloged_item.accn_ID = accn.transaction_ID) AS cnt_spec, trans.nature_of_material
-FROM accn
-JOIN trans ON accn.transaction_ID = trans.transaction_ID
+SELECT accn.estimated_count, accn.accn_number, (SELECT COUNT(*) FROM cataloged_item WHERE cataloged_item.accn_ID = accn.transaction_ID) AS cnt_spec, trans.nature_of_material, collection.institution_acronym, agent.preferred_agent_name, trans.trans_date
 
-ORDER BY cnt_spec DESC
+FROM accn
+
+JOIN trans ON accn.transaction_ID = trans.transaction_ID
+JOIN collection ON trans.collection_id = collection.collection_id
+JOIN trans_agent ON trans.transaction_id = trans_agent.transaction_id
+JOIN agent ON trans_agent.agent_ID = agent.agent_ID
+
+WHERE institution_acronym = 'CHAS' AND
+(trans_agent.trans_agent_role = 'received from' OR trans_agent.trans_agent_role = 'associated with agency')
+
+ORDER BY accn_number
