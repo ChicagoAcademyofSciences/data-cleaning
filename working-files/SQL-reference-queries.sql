@@ -76,3 +76,20 @@ WHERE institution_acronym = 'CHAS' AND
 (trans_agent.trans_agent_role = 'received from' OR trans_agent.trans_agent_role = 'associated with agency')
 
 ORDER BY accn_number
+
+
+-- To pull georeferences by a specific agent_ID
+
+select agent.preferred_agent_name, specimen_event.verified_date, cataloged_item.cat_num, identification.scientific_name, collecting_event.verbatim_locality, locality.spec_locality, geog_auth_rec.state_prov, geog_auth_rec.county, locality.locality_remarks
+
+from cataloged_item
+
+join specimen_event on cataloged_item.collection_object_id = specimen_event.collection_object_id
+join agent on specimen_event.verified_by_agent_id = agent_id
+join identification on cataloged_item.collection_object_id = identification.collection_object_id
+join collecting_event on specimen_event.collecting_event_id = collecting_event.collecting_event_id
+join locality on collecting_event.locality_id = locality.locality_id
+join geog_auth_rec on locality.geog_auth_rec_id = geog_auth_rec.geog_auth_rec_id
+
+where specimen_event.VERIFIED_BY_AGENT_ID = 21313948
+and identification.accepted_id_fg = 1
