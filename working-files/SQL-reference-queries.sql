@@ -1,3 +1,26 @@
+--Select all identifications from a given collection
+SELECT identification.accepted_id_fg,
+identification.identification_remarks,
+identification.nature_of_id,
+identification.scientific_name as id_string,
+identification.taxa_formula,
+identification.made_date,
+agent.preferred_agent_name,
+cataloged_item.cat_num,
+cataloged_item.collection_cde,
+taxon_name.scientific_name as id_class
+
+from identification
+
+left join cataloged_item on identification.collection_object_id = cataloged_item.collection_object_id
+left join identification_taxonomy on identification.identification_id = identification_taxonomy.identification_id
+left join taxon_name on identification_taxonomy.taxon_name_id = taxon_name.taxon_name_id
+left join identification_agent on identification.identification_id = identification_agent.identification_id
+left join agent on identification_agent.agent_id = agent.agent_id
+
+where cataloged_item.collection_cde like 'Inv'
+
+
 --Cleaning up no date records with birth/death dates and accession receipt dates
 
 SELECT collection.institution_acronym, cataloged_item.collection_cde, cataloged_item.cat_num, accn.accn_number, accn.received_date, collecting_event.began_date, collecting_event.ended_date, identification.scientific_name, identification.accepted_id_fg, agent_status.agent_status, agent_status.status_date
