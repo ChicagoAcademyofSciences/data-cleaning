@@ -1,14 +1,22 @@
---Select all identifications from a given collection
+--Select all identifications with Arctos classifications from a given collection
 SELECT identification.accepted_id_fg,
-identification.identification_remarks,
-identification.nature_of_id,
-identification.scientific_name as id_string,
-identification.taxa_formula,
-identification.made_date,
-agent.preferred_agent_name,
-cataloged_item.cat_num,
-cataloged_item.collection_cde,
-taxon_name.scientific_name as id_class
+  identification.identification_remarks,
+  identification.nature_of_id,
+  identification.scientific_name as id_string,
+  identification.taxa_formula,
+  identification.made_date,
+  identification.identification_id,
+  agent.preferred_agent_name,
+  cataloged_item.cat_num,
+  cataloged_item.collection_cde,
+  cataloged_item.collection_object_id,
+  taxon_name.scientific_name as id_class,
+  decode(taxon_term.source,
+    'Arctos', 'Arctos',
+    'Other') source,
+  taxon_term.classification_id,
+  taxon_term.term,
+  taxon_term.term_type
 
 from identification
 
@@ -17,8 +25,11 @@ left join identification_taxonomy on identification.identification_id = identifi
 left join taxon_name on identification_taxonomy.taxon_name_id = taxon_name.taxon_name_id
 left join identification_agent on identification.identification_id = identification_agent.identification_id
 left join agent on identification_agent.agent_id = agent.agent_id
+left join taxon_term on taxon_name.taxon_name_id = taxon_term.taxon_name_id
 
-where cataloged_item.collection_cde like 'Inv'
+--this last bit selects based on Arctos Source
+where cataloged_item.collection_cde like 'Ento' and source = 'Arctos'
+
 
 
 --Cleaning up no date records with birth/death dates and accession receipt dates
