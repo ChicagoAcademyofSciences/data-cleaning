@@ -14,7 +14,7 @@ CHAS malacology specimens were inventoried in separate Excel spreadsheets by tax
 
 Janeen Jones (Assistant Collections Manager at FMNH) downloaded unique names by taxonomic order from FMNH's malacology collections in EMu. For mollusks (unlike insects) FMNH does store old taxonomic synonyms, which made this species list much more useful than what we were able to obtain for entomology. In addition, many of these names have been evaluated with recent expertise by Jochen Gerber (Collections Manager at FMNH).
 
-[@ekrimmel](https://github.com/ekrimmel) was able to validate approximately 50% of CHAS names against the data from FMNH. Any names that could not be validated against the FMNH dataset were validated using [WoRMS](http://www.marinespecies.org) (first priority), or [GBIF](https://www.gbif.org/tools/species-lookup) (second priority). Any names that were still unvalidated after trying FMNH, WoRMS, and GBIF were researched and validated individually by one of our NSF interns, Yvi Russell.
+[@ekrimmel](https://github.com/ekrimmel) was able to validate approximately 50% of CHAS names against the data from FMNH. Any names that could not be validated against the FMNH dataset were validated using [WoRMS](http://www.marinespecies.org) (first priority), or [GBIF](https://www.gbif.org/tools/species-lookup) (second priority). Any names that were still unvalidated after trying FMNH, WoRMS, and GBIF were researched and validated individually in part by one of our NSF interns, Yvi Russell. This individual taxon validation is ongoing.
 
 * * *
 
