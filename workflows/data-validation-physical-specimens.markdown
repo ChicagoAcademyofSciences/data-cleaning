@@ -68,3 +68,24 @@ Work was done by insect order, and completed by the follow people:
 1.	Create family labels for each unit tray, and order labels for each drawer.
 
 1.	Once specimens are in their new storage locations, update this information in the inventory data spreadsheet.
+
+
+# Validating Malacology Inventory Data
+
+**What follows is the workflow of the Malacology Verification procedure written and implemented by [@dipiquard](https://github.com/dpiquard) in Spring-Fall of 2018 for the InvertEBase NSF Grant:**
+
+1.	Print out (from Arctos) a list of all specimens for a given cabinet organized by storage location. 
+2.	Look at each, individual specimen and compare the data with the specimen to their record in Arctos. 
+3.	Take note of differences in Catalog Number/Other ID numbers, Identifications, Specific locality, etc. Do research/check original catalog books to verify conflicts in data. Make appropriate changes in Arctos (add legacy IDs, fix conflicts in Verbatim/Specific Location, Date Collected, Collector information, etc.). Document any changes using appropriate remarks sections.
+4.	Take note of storage quality. Does specimen need to be re-housed? Rehouse if necessary.
+5.	Take note of any specimens that are in Arctos with a location, but are not found in the location given. Also, any specimens that are found in the collection (FIC) without a record in Arctos. These specimens should be added to the spreadsheet “Mala_Verification_Project_FIC_Specimens” (in Oct 2018 these were located in L:/Inventory/Malacology/DansFiles)
+6.	Take note if there are any extra labels in the cabinet trays and try to match them to other specimens in the collection or to the FIC specimens.
+7.	Be on the lookout for local specimens that would be good for imaging.
+8.	Print labels with updated Arctos records and place label with the appropriate specimen – this part of the project has been filled by volunteer work, Paul Francuch (Cabinets 1-18), Susan Benner (Cabinet 23, 27-31), and Tim Later (Cabinets 19, 20, 21, 26 so far). Some visiting students have re-labeled Cabinets 22, 24, and 25.
+
+## Work left to do:
+1. Still yet to do: Try to match specimens in the “Mala_Verification_Project_FIC_Specimens” spreadsheet to missing specimens or to labels found in cabinet trays.
+1. Once all specimens are verified and geo-referenced (at least the North American specimens), the specimens verification status can be changed to “accepted” in Arctos. Dan completed this full procedure through Cabinet 30: Tray 26 (verified up to Cab 30: Tray 26).
+1. In addition, there are multiple Natural History Surveys that will need Projects created or updated in Arctos. This information, I believe to be valuable to the history of the Chicago Academy of Sciences and will provide data relevant to study of the ecosystem of the Chicago region in the early 20th century. The current “Baker Natural History Survey” Project in Arctos is full of errors and should be researched regarding removal/addition of specimens to the project. In addition, a second project should be created to account for the Natural History Survey conducted in 1908-10 during the creation and excavation of the North Shore Channel. It should be noted that none of the specimens from these Projects were georeferenced due to the nature of their collecting locality (ex: Station XXVII) and further research may be done to pinpoint exact collecting localities for these specimens [Daniel Piquard, 2018-10-02]
+1. Updated labels should eventually be printed and applied to incorporate identifications per INHS malacologists in during summer 2019.
+
