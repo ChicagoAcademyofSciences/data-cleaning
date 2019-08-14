@@ -72,7 +72,7 @@ Work was done by insect order, and completed by the follow people:
 
 # Validating Malacology Inventory Data
 
-**What follows is the workflow of the Malacology Verification procedure written and implemented by [@dipiquard](https://github.com/dpiquard) in Spring-Fall of 2018 for the InvertEBase NSF Grant:**
+*What follows is the workflow of the Malacology Verification procedure written and implemented by [@dipiquard](https://github.com/dpiquard) in Spring-Fall of 2018 for the InvertEBase NSF Grant:*
 
 1.	Print out (from Arctos) a list of all specimens for a given cabinet organized by storage location. 
 2.	Look at each, individual specimen and compare the data with the specimen to their record in Arctos. 
