@@ -1,0 +1,31 @@
+guid,ATTRIBUTE,ATTRIBUTE_VALUE,REMARKS,ATTRIBUTE_DATE,DETERMINER
+CHAS:Mamm:2018.10.1,reproductive data,nipples not visible,,2018-10-20,Anna Chinn
+CHAS:Teach:E2019A.12,reproductive data,"non-scrotal, testes abdonimal",,2018-11-13,Charmaine John
+CHAS:Teach:E2019A.13,reproductive data,nipples not visible,,2018-07-08,Elizabeth Nelson
+CHAS:Mamm:2018.8.5,reproductive data,no gonads found,,2019-01-16,Emerys Murray
+CHAS:Mamm:2018.8.6,reproductive data,nipples not visible,,2018-09-09,Erin Shoffstall
+CHAS:Mamm:2019.1.70,reproductive data,"nipples not visible, pregnant with 13 undistinguishable fetuses (9mm spherical)",,2019-04-16,Janelle Iaccino
+CHAS:Mamm:2019.1.71,reproductive data,"nipples visible, extensive mammary tissue",,2018-10-03,Kristian Williams
+CHAS:Mamm:2018.10.2,reproductive data,nipples not visible,,2018-10-19,Kristian Williams
+CHAS:Mamm:2018.8.7,reproductive data,"nipples not visible, not pregnant",,2018-12-18,Myra Surin
+CHAS:Mamm:2018.8.8,reproductive data,testes abdonimal,,2019-01-08,Myra Surin
+CHAS:Mamm:2019.1.72,reproductive data,testes abdonimal,,2018-10-09,Shannon Bowen
+CHAS:Mamm:2018.8.9,reproductive data,testes abdonimal,,2018-11-12,Shannon Bowen
+CHAS:Mamm:2018.8.10,reproductive data,testes abdonimal,,2019-03-03,Shannon Bowen
+CHAS:Mamm:2019.1.73,reproductive data,testes abdonimal,,2018-12-31,Tom Collins
+CHAS:Mamm:2019.1.75,reproductive data,baculum found under skin,,2018-09-09,Yuqing Wang
+CHAS:Mamm:2018.10.1,age class,adult,,2018-10-20,Anna Chinn
+CHAS:Mamm:2018.8.4,stomach contents,digested yellow matter,,2018-10-06,Anna Chinn
+CHAS:Mamm:2018.10.1,stomach contents,digested hair,,2018-10-20,Anna Chinn
+CHAS:Teach:E2019A.12,stomach contents,black slime,,2018-11-13,Charmaine John
+CHAS:Mamm:2018.8.5,stomach contents,orange paste,,2019-01-16,Emerys Murray
+CHAS:Mamm:2018.8.6,stomach contents,"full stomach, digested food",,2018-09-09,Erin Shoffstall
+CHAS:Mamm:2019.1.70,stomach contents,"green, grey mush",,2019-04-16,Janelle Iaccino
+CHAS:Teach:E2019A.14,stomach contents,none,,2018-10-26,Jean Maynard
+CHAS:Mamm:2019.1.71,stomach contents,none,,2018-10-03,Kristian Williams
+CHAS:Mamm:2018.10.2,stomach contents,digested greyish matter,,2018-10-19,Kristian Williams
+CHAS:Mamm:2018.8.7,stomach contents,"Beige, white grainy paste, occasional dark specs, possibly bread. Thin black seed skins, sunflower seeds?",,2018-12-18,Myra Surin
+CHAS:Mamm:2018.8.8,stomach contents,"brownish-beige, grainy mush with black specks; possibly seeds",,2019-01-08,Myra Surin
+CHAS:Mamm:2018.8.9,stomach contents,"Gritty, fiberous matter, brown/pink in color.",,2018-11-12,Shannon Bowen
+CHAS:Mamm:2019.1.73,stomach contents,not examined,,2018-12-31,Tom Collins
+CHAS:Mamm:2019.1.71,ectoparasites detected,yes,"mites, in ears",2018-10-03,Kristian Williams

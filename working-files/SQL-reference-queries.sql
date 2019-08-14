@@ -1,3 +1,66 @@
+-- checks mammal events for verification status count and returns event ids
+SELECT count(specimen_event.verificationstatus) count_verif,
+decode(specimen_event.verificationstatus,
+  'unaccepted', 'a unaccepted',
+  'accepted', 'b accepted',
+  'unverified', 'c unverified',
+  'other') verificationstatus, 
+cataloged_item.cat_num, collecting_event.collecting_event_id, specimen_event.specimen_event_id from specimen_event
+
+left join cataloged_item on specimen_event.COLLECTION_OBJECT_ID = cataloged_item.collection_object_id
+left join collection on cataloged_item.collection_id = collection.collection_id
+left join collecting_event on specimen_event.collecting_event_id = collecting_event.collecting_event_id
+
+where collection.guid_prefix like 'CHAS:Mamm'
+
+group by cataloged_item.cat_num, specimen_event.specimen_event_id, specimen_event.verificationstatus, collecting_event.collecting_event_id
+
+order by cat_num, verificationstatus
+
+
+-- Returns bird specimen_event/locality stack
+SELECT cataloged_item.cat_num,
+specimen_event.specimen_event_id,
+specimen_event.VERIFICATIONSTATUS,
+specimen_event.VERIFIED_DATE,
+agent.preferred_agent_name as verified_agent,
+specimen_event.SPECIMEN_EVENT_REMARK,
+collecting_event.collecting_event_id,
+collecting_event.verbatim_date,
+collecting_event.began_date,
+collecting_event.ended_date,
+collecting_event.VERBATIM_LOCALITY,
+collecting_event.coll_event_remarks,
+collecting_event.verbatim_coordinates,
+locality.LOCALITY_ID,
+locality.spec_locality,
+locality.DEC_LAT,
+locality.DEC_LONG,
+locality.LOCALITY_REMARKS,
+GEOG_AUTH_REC.HIGHER_GEOG
+
+FROM cataloged_item
+
+LEFT JOIN specimen_event on cataloged_item.COLLECTION_OBJECT_ID = specimen_event.COLLECTION_OBJECT_ID
+LEFT JOIN collecting_event on specimen_event.COLLECTING_EVENT_ID = collecting_event.COLLECTING_EVENT_ID
+LEFT JOIN locality on collecting_event.locality_id = locality.locality_id
+LEFT JOIN collection on cataloged_item.collection_id = collection.collection_id
+LEFT JOIN agent on specimen_event.VERIFIED_BY_AGENT_ID = agent.agent_id
+LEFT JOIN GEOG_AUTH_REC on locality.GEOG_AUTH_REC_ID = GEOG_AUTH_REC.GEOG_AUTH_REC_ID
+
+where collection.guid_prefix like 'CHAS:Bird'
+
+order by cataloged_item.cat_num
+
+-- Checks if the taxon_name input exists in the database
+SELECT count(classification_id), scientific_name
+from taxon_name left join taxon_term on taxon_name.taxon_name_id = taxon_term.taxon_name_id where source like 'Arctos' AND
+
+scientific_name like 'Tectura scutum'
+
+group by scientific_name
+
+
 --Select all identifications with Arctos classifications from a given collection
 SELECT identification.accepted_id_fg,
   identification.identification_remarks,
