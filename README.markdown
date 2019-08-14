@@ -3,7 +3,7 @@ This repository contains documentation, scripts, and look-ups related to cleanin
 
 The [/backups](/backups) directory contains old copies of look-up files.
 
-The [/loaded-data](/loaded-data) directory contains a copy of the inventory data file that was loaded to Arctos via the bulkloader. These files are also archived on the Collections server in their respective discipline directories.
+The [/loaded-data](/loaded-data) directory contains a copy of the inventory data file that was loaded to Arctos via the bulkloader. These files are also archived on the Collections server in their respective discipline directories. This directory also includes any bulkloaded updates to data already on Arctos and copies of additional new aquisitions bulkloaded to Arctos.
 
 The [/lookups](/lookups) directory contains the most up-to-date lookup for accessions, agents, geography, and storage (part) locations. These files should be used while cleaning inventory data to save time and ensure consistency.
 
