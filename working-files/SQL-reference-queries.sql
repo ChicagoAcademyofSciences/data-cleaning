@@ -4,7 +4,7 @@ decode(specimen_event.verificationstatus,
   'unaccepted', 'a unaccepted',
   'accepted', 'b accepted',
   'unverified', 'c unverified',
-  'other') verificationstatus, 
+  'other') verificationstatus,
 cataloged_item.cat_num, collecting_event.collecting_event_id, specimen_event.specimen_event_id from specimen_event
 
 left join cataloged_item on specimen_event.COLLECTION_OBJECT_ID = cataloged_item.collection_object_id
@@ -190,3 +190,40 @@ join geog_auth_rec on locality.geog_auth_rec_id = geog_auth_rec.geog_auth_rec_id
 
 where specimen_event.VERIFIED_BY_AGENT_ID = 21313948
 and identification.accepted_id_fg = 1
+
+-- pulls accepted event for an agent verified on a given day
+select distinct agent.preferred_agent_name, specimen_event.verified_date, cataloged_item.cat_num, identification.scientific_name, collecting_event.verbatim_locality, locality.spec_locality, geog_auth_rec.state_prov, geog_auth_rec.county, locality.locality_remarks, coll_event_remarks, locality.locality_id
+
+from cataloged_item
+
+join specimen_event on cataloged_item.collection_object_id = specimen_event.collection_object_id
+join agent on specimen_event.verified_by_agent_id = agent_id
+join identification on cataloged_item.collection_object_id = identification.collection_object_id
+join collecting_event on specimen_event.collecting_event_id = collecting_event.collecting_event_id
+join locality on collecting_event.locality_id = locality.locality_id
+join geog_auth_rec on locality.geog_auth_rec_id = geog_auth_rec.geog_auth_rec_id
+
+where specimen_event.VERIFIED_BY_AGENT_ID = 21321498
+and specimen_event.verified_date in ('2019-10-18','2019-10-19')
+and specimen_event.verificationstatus = 'accepted'
+
+order by locality_id
+
+-- returns specimens where identifications have been updated/more than one identifications
+select *
+from
+  (SELECT count(cat_num) as cnt, cat_num
+  from cataloged_item
+  left join identification on cataloged_item.collection_object_id = identification.collection_object_id where cataloged_item.collection_cde = 'Inv' group by cat_num)
+where cnt > 1
+
+-- returns number of specimen parts for a given query (i.e. dissolves specimens cataloged as lots)
+SELECT sum(COLL_OBJECT.LOT_COUNT)
+
+from cataloged_item
+
+left join flat on flat.collection_object_id = cataloged_item.collection_object_id
+left join specimen_part on cataloged_item.collection_object_id = specimen_part.DERIVED_FROM_CAT_ITEM
+left join COLL_OBJECT on COLL_OBJECT.collection_object_id = specimen_part.collection_object_id
+
+where cataloged_item.collection_CDE = 'Ento'
