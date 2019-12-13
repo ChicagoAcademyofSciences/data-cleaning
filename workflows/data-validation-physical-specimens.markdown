@@ -70,7 +70,7 @@ Work was done by insect order, and completed by the follow people:
 1.	Once specimens are in their new storage locations, update this information in the inventory data spreadsheet.
 
 ## Work left to do:
-### Labeling specimens with catalog numbers
+1. Labeling specimens with catalog numbers. This was started Summer 2018 and formalized in December 2019 using [this workflow](https://github.com/ChicagoAcademyofSciences/data-cleaning/blob/master/workflows/ento-catalog-number-labels.markdown).
 
 
 
