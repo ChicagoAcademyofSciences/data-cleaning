@@ -1,5 +1,5 @@
 ## CHAS:Egg data quality control
-Workflow, written by Loyola Univeristy IES Intern, Kirsten Hammons, April 2020.
+Workflow written by Loyola Univeristy IES Intern, Kirsten Hammons, April 2020.
 ***
 
 ### Objective
