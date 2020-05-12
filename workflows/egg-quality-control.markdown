@@ -40,7 +40,7 @@ Following the resolution of egg event duplicates (see [Duplicate egg event QC in
     1. Make sure that the Specific Locality, with Higher Geography, Elevation, and Depth combined represent all information given in the Verbatim Locality.
 8. Georeference based on Specific Locality using GeoLocate.
     1. Add ‘Locality Remarks’ based on your thought process for the georeference, indicate any other maps used.
-        1. i.e. “Georeferenced at the midpoint of Mission Valley per 1930 La Jolla USGS Topo [khammons 15 April 2020].
+        1. i.e. “Georeferenced at the midpoint of Mission Valley per 1930 La Jolla USGS Topo [khammons 15 April 2020].”
     1. Add the name of the map to ‘Georeference Source’.
     1. Change ‘Georeference Protocol’ to MaNIS Georeferencing Guidelines.
 
