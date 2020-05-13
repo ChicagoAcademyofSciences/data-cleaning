@@ -1,4 +1,4 @@
-## Mammalogy collection event verification and georeferencing
+## Mammalogy collection (CHAS:Mamm) event verification and georeferencing
 Workflow written by Loyola University IES Intern, Kirsten Hammons, April 2020.
 ***
 ### Objective
