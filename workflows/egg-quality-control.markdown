@@ -1,4 +1,4 @@
-## CHAS:Egg data quality control
+## Oology collection (CHAS:Egg) data quality control
 Workflow written by Loyola University IES Intern, Kirsten Hammons, April 2020.
 ***
 
