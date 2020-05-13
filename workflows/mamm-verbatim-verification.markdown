@@ -1,5 +1,5 @@
 ## Mammalogy collection event verification and georeferencing
-Workflow written by Loyola University IES Intern, Kirsten Hammon, April 2020.
+Workflow written by Loyola University IES Intern, Kirsten Hammons, April 2020.
 ***
 ### Objective
 To update Arctos collecting events for mammal records where verbatim date and locality fields read _[transcribed directly into verbatim fields]_. Then, verify that existing coordinates match the specimen's specific locality. Update or add georeferences when needed.
