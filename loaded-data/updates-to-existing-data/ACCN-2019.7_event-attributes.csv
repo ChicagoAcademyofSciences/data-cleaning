@@ -1,0 +1,19 @@
+event_name,event_attribute_type,event_attribute_value,event_attribute_units,event_attribute_remark,event_determination_method,event_determined_date,event_determiner
+temp_11328707,air temperature,25.1,celsius,,,2018-07-27,Daniela Martinez
+temp_11328700,air temperature,25.8,celsius,,,2018-07-27,Daniela Martinez
+temp_11328701,air temperature,27.1,celsius,,,2018-07-27,Shawnae Adams
+temp_11328702,air temperature,26.9,celsius,,,2018-07-27,Shawnae Adams
+temp_11328703,air temperature,20.6,celsius,,,2018-07-27,Shawnae Adams
+temp_11328685,air temperature,41.2,celsius,Temperature units appear to have been incorrectly recorded at time of collection. May refer to a farenheit measurement.,,2018-07-27,Shawnae Adams
+temp_11328686,air temperature,27.1,celsius,,,2018-07-27,Shawnae Adams
+temp_11328707,relative humidity,50,percent,,,2018-07-27,Daniela Martinez
+temp_11328700,relative humidity,67,percent,,,2018-07-27,Daniela Martinez
+temp_11328701,relative humidity,70,percent,,,2018-07-27,Shawnae Adams
+temp_11328702,relative humidity,70,percent,,,2018-07-27,Shawnae Adams
+temp_11328703,relative humidity,64,percent,,,2018-07-27,Shawnae Adams
+temp_11328685,relative humidity,37.8,percent,,,2018-07-27,Shawnae Adams
+temp_11328686,relative humidity,43.8,percent,,,2018-07-27,Shawnae Adams
+temp_11328703,weather,wind: light breeze; sky: clear,,,,2018-07-27,Shawnae Adams
+temp_11328685,weather,wind: light breeze; sky: clear,,,,2018-07-27,Shawnae Adams
+temp_11328686,weather,wind: light breeze; sky: partly cloudy,,,,2018-07-27,Shawnae Adams
+temp_11328687,weather,wind: windy; sky: partly cloudy,,,,2018-07-27,Shawnae Adams
